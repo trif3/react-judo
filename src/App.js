@@ -9,15 +9,21 @@ class App extends Component {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
-            Edit <code>src/App.js</code> and save to reload.
+            Welcome to <code>JudoSport.gr</code> happy Ippon!
+          </p>
+          <p>
+            phone1: <code>694 827 8065</code> <br/> phone2: <code>694 551 7538</code>
+          </p>
+          <p>
+            Greece, Thessaloniki, Ampolokipoi, Dimotiko stadio Megas Alexandros
           </p>
           <a
             className="App-link"
-            href="https://reactjs.org"
+            href="https://judosport.gr"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Learn React
+            Kleitomaxos
           </a>
         </header>
       </div>
