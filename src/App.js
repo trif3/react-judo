@@ -15,7 +15,7 @@ class App extends Component {
             phone1: <code>694 827 8065</code> <br/> phone2: <code>694 551 7538</code>
           </p>
           <p>
-            Greece, Thessaloniki, Ampolokipoi, Dimotiko stadio Megas Alexandros
+            Greece, Thessaloniki, Ampelokipoi, Dimotiko stadio Megas Alexandros
           </p>
           <a
             className="App-link"
