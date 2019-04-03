@@ -5,34 +5,45 @@ export default class RandomAthlete extends Component {
 
     dojoService = new DojoService()
  
-    state = {
-        athlete: {},
-        loading: true
-    };
+    state = { };
+
+    constructor() {
+        super();
+        this.onAthleteLoaded();
+    }
+
+    onAthleteLoaded(){
+        this.dojoService
+            .getAthlete()
+            .then( (athlete) => {
+                this.setState(athlete);
+            });
+    }
 
     render() {
-        const {athlete} = this.state;
+        const { id, name, pic, gender, email } = this.state;
         return (
             <div className="rendom-athlete jumbotron rounded">
-                <AthleteView athlete={athlete}/> 
+                <img className="athlete-image" src={pic} alt={name} />
+                <div>
+                    <h4>{name}</h4>
+                    <ul className="list-group list-group-flash">
+                        <li className="list-group-item">
+                            <span className="term">Id: </span>
+                            <span>{id}</span>
+                        </li>
+                        <li className="list-group-item">
+                            <span className="term">Gender: </span>
+                            <span>{gender}</span>
+                        </li>
+                        <li className="list-group-item">
+                            <span className="term">email: </span>
+                            <span>{email}</span>
+                        </li>
+                    </ul>
+                </div>
             </div>
         );
     }
 }
 
-const AthleteView = ({athlete}) => {
-    const { name, lastName, birth} = athlete;
-
-    return(
-        <React.Fragment>
-        <img className="athlete-image"
-             src="https://avatars0.githubusercontent.com/u/22911094?s=460"
-             alt="athlete"/>
-        <div>
-            <h4>{name}</h4>
-        </div>     
-        </React.Fragment>
-    );
-};
-
-  

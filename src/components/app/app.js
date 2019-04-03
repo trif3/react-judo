@@ -3,6 +3,7 @@ import logo from '../../imgs/logo.svg';
 import './app.css';
 
 import Header from '../header';
+import RandomAthlete from '../random-athlete/random-athlete';
 
 class App extends Component {
   render() {
@@ -12,8 +13,10 @@ class App extends Component {
 
         <header className="App-header">
 
-
           <img src={logo} className="App-logo" alt="logo" />
+
+          <RandomAthlete />
+
           <p>
             Welcome to <code>JudoSport.gr</code> happy Ippon!
           </p>
