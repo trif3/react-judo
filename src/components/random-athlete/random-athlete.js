@@ -23,7 +23,7 @@ export default class RandomAthlete extends Component {
     render() {
         const { id, name, pic, gender, email } = this.state;
         return (
-            <div className="rendom-athlete jumbotron rounded">
+            <div className="random-athlete jumbotron rounded">
                 <img className="athlete-image" src={pic} alt={name} />
                 <div>
                     <h4>{name}</h4>
