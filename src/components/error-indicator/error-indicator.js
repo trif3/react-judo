@@ -5,8 +5,9 @@ import logo from '../../imgs/logo.svg';
 const ErrorIndicator = () => {
     return (
         <div className="error-indicator">
-            <img src={logo} alt="error icon"/>
             <span className="hajime">Hajime!</span>
+
+            <img src={logo} alt="error icon"/>
             <span>
                 something wrong!
             </span>
