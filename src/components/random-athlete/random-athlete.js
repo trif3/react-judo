@@ -4,6 +4,14 @@ import Spinner from '../spinner';
 import './random-athlete.css'
 export default class RandomAthlete extends Component {
 
+    static defaultProps = {
+        updateInterval: 1000
+    };
+
+    static propTypes = {
+
+    };
+
     dojoService = new DojoService()
  
     state = { 
