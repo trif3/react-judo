@@ -1,2 +1,3 @@
-import React, { Component } from 'react';
+import ItemDetails from '../item-details';
 
+export default ItemDetails;
