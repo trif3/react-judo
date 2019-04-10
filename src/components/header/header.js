@@ -1,8 +1,9 @@
 import React from "react";
+import { Link } from 'react-router-dom'
 
 import "./header.css";
 
-const Header = () => {
+const Header = ({ onServiceChange }) => {
   return (
     <div className="header d-flex">
       <h3>
@@ -19,6 +20,10 @@ const Header = () => {
           <a href="#">About</a>
         </li>
       </ul>
+
+      <button onClick={onServiceChange} className="btn btn-primary btn-sm">
+        Virtual Dojo
+      </button>
     </div>
   );
 };
