@@ -77,29 +77,29 @@ const AthleteView = ({athlete}) => {
     return (
         <React.Fragment>
             <div>
-        <ul className="list-group list-group-flash">
-            <li className="list-group-item">
-                <img className="athlete-image" src={pic} alt={name} />
-                <h5>{name}</h5>
-            </li>
-        </ul>
-    </div>
-    <div>
-        <ul className="list-group list-group-flash">
-            <li className="list-group-item">
-                <span className="term">Id: </span>
-                <span>{id}</span>
-            </li>
-            <li className="list-group-item">
-                <span className="term">Gender: </span>
-                <span>{gender}</span>
-            </li>
-            <li className="list-group-item">
-                <span className="term">email: </span>
-                <span>{email}</span>
-            </li>
-        </ul>
-    </div>
+                <ul className="list-group list-group-flash">
+                    <li className="list-group-item">
+                        <img className="athlete-image" src={pic} alt={name} />
+                        <h5>{name}</h5>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul className="list-group list-group-flash">
+                    <li className="list-group-item">
+                        <span className="term">Id: </span>
+                        <span>{id}</span>
+                    </li>
+                    <li className="list-group-item">
+                        <span className="term">Gender: </span>
+                        <span>{gender}</span>
+                    </li>
+                    <li className="list-group-item">
+                        <span className="term">email: </span>
+                        <span>{email}</span>
+                    </li>
+                </ul>
+            </div>
         </React.Fragment>
     );
 }

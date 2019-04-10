@@ -7,17 +7,19 @@ const Header = ({ onServiceChange }) => {
   return (
     <div className="header d-flex">
       <h3>
-        <a href="#">JudoSport.gr</a>
+        <Link to="/">
+          JudoSport.gr
+        </Link>
       </h3>
       <ul className="d-flex">
         <li>
-          <a href="#">Athletes</a>
+          <Link to="/athletes/">Athletes</Link>
         </li>
         <li>
-          <a href="#">Mental</a>
+          <Link to="/teachers/">Teachers</Link>
         </li>
         <li>
-          <a href="#">About</a>
+          <Link to="/championships/">Championships</Link>
         </li>
       </ul>
 

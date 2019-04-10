@@ -4,6 +4,9 @@ import './app.css';
 
 import Header from '../header';
 import RandomAthlete from '../random-athlete/random-athlete';
+import ErrorBoundry from '../error-boundry';
+import DojoService from '../../services/dojo-service';
+import MockDojoService from '../../services/mock-dojo-service';
 
 class App extends Component {
   render() {
