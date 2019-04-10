@@ -8,6 +8,8 @@ import ErrorBoundry from '../error-boundry';
 import DojoService from '../../services/dojo-service';
 import MockDojoService from '../../services/mock-dojo-service';
 
+import {} from '../pages';
+
 class App extends Component {
   render() {
     return (
