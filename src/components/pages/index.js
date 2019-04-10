@@ -1,9 +1,9 @@
-import AthletePage from './athlete-page';
-import TeacherPage from './teacher-page';
-import ChampionshipPage from './championship-page';
+import AthletesPage from './athlete-page';
+import TeachersPage from './teacher-page';
+import ChampionshipsPage from './championship-page';
 
 export {
-    AthletePage,
-    TeacherPage,
-    ChampionshipPage
+    AthletesPage,
+    TeachersPage,
+    ChampionshipsPage
 };

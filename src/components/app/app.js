@@ -9,15 +9,16 @@ import DojoService from '../../services/dojo-service';
 import MockDojoService from '../../services/mock-dojo-service';
 
 import {
-  AthletePage,
-  TeacherPage,
-  ChampionshipPage
+  AthletesPage,
+  TeachersPage,
+  ChampionshipsPage
 } from '../pages';
 
 import { DojoServiceProvider } from '../dojo-service-context';
 
 import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
 import { ChampionshipDetails } from '../dojo-components/championship-details';
+import teacherDetails from '../dojo-components/teacher-details';
 
 export default class App extends Component {
   
@@ -54,10 +55,14 @@ export default class App extends Component {
               <img src={logo} className="App-logo" alt="logo" />
 
               <RandomAthlete />
+              
 
-              <p>
-                Welcome to <code>JudoSport.gr</code> happy Ippon!
-              </p>
+              <Switch>
+                <Route path="/" render={() => <p>Welcome to <code>JudoSport.gr</code></p>} exact />
+                <Route path="/athletes/:id?" component={AthletesPage} />
+              </Switch>
+
+              
               <p>
                 phone1: <code>694 827 8065</code> <br/> phone2: <code>694 551 7538</code>
               </p>

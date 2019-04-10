@@ -73,8 +73,6 @@ export default class RandomAthlete extends Component {
 const AthleteView = ({athlete}) => {
 
     const { id, name, pic, gender, email }  = athlete;
-    if(pic === undefined) { pic = "https://placeimg.com/400/500/any"}
-
     return (
         <React.Fragment>
             <div>

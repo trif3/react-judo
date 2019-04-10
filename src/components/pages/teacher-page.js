@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { TeacherDetails, TeacherList } from '../dojo-components';
 import SplitContainer from '../split-container';
 
-export default class TeacherPage extends Component {
+export default class TeachersPage extends Component {
 
     state = {
         selectedItem: null

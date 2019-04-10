@@ -4,9 +4,9 @@ import { AthleteDetails, AthleteList } from '../dojo-components';
 
 import SplitContainer from '../split-container';
 
-const AthletePage = ({history, match}) => {
+const AthletesPage = ({history, match}) => {
     const { id } = match.params;
-
+    console.log(id);
     return(
         <SplitContainer 
             left={<AthleteList onItemSelected={(id) => history.push(id)} />}
@@ -15,4 +15,4 @@ const AthletePage = ({history, match}) => {
     );
 };
 
-export default withRouter(AthletePage);
+export default withRouter(AthletesPage);

@@ -1,5 +1,5 @@
 export default class DojoService {
-    
+
     _athletes = [
         {
             id: 1, 
@@ -46,30 +46,6 @@ export default class DojoService {
         }
     ];
 
-    getAllAthletes = async () => {
-        return this._athletes;
-    };
-
-    getAthlete = async () => {
-        return this._athletes[0];
-    };
-
-    getAllTeachers = async () => {
-        return this._teachers;
-    };
-
-    getTeacher = async () => {
-        return this._teachers[0];
-    };
-
-    getAllChampionships = async () => {
-        return this._championships;
-    };
-
-    getChampionship = async () => {
-        return this._championships[0];
-    };
-
     _anyImageUrl = 'https://placeimg.com/400/500/any';
     
     getAthleteImage = () => {
@@ -84,33 +60,52 @@ export default class DojoService {
         return this._anyImageUrl;
     }
 
-    // _baseUrl = 'https://randomuser.me/api/';
+    _baseUrl = 'https://randomuser.me/api/';
 
-    // async getResource(url) {
-    //     const res = await fetch(`${this._baseUrl}${url}`);
-    //     if(!res.ok){
-    //         throw new Error(`Could not fetch ${url}, received ${res.status}`);
-    //     }
-    //     return await res.json();
-    // }
+    getResource = async (url) => {
+        const res = await fetch(`${this._baseUrl}${url}`);
+        if(!res.ok){
+            throw new Error(`Could not fetch ${url}, received ${res.status}`);
+        }
+        return await res.json();
+    }
 
-    // async getAthletes() {
-    //     const res = await this.getResource(`?results=5`);
-    //     return res.results;
-    // }
+    getAllAthletes = async () => {
+        const res = await this.getResource(`?results=5`);
+        return res.results
+            .map(this._transformAthlete)
+            .slice(0, 5);
+    }
 
-    // async getAthlete() {
-    //     const res = await this.getResource('?gender=female');
-    //     return this._transformAthlete(res.results[0]);
-    // }
+    getAthlete = async () => {
+        const res = await this.getResource('?gender=female');
+        return this._transformAthlete(res.results[0]);
+    }
 
-    // _transformAthlete(athlete) {
-    //     return {
-    //         id: athlete.id.name,
-    //         gender: athlete.gender,
-    //         name: `${athlete.name.title} ${athlete.name.first} ${athlete.name.last}`,
-    //         pic: athlete.picture.medium,
-    //         email: athlete.email
-    //     }
-    // }
+    getAllTeachers = async () => {
+        return this.getAllAthletes;
+    };
+
+    getTeacher = async () => {
+        const res = await this.getResource('?gender=male');
+        return this._transformAthlete(res.results[0]);
+    };
+
+    getAllChampionships = async () => {
+        return this._championships;
+    };
+
+    getChampionship = async () => {
+        return this._championships[0];
+    };
+
+    _transformAthlete(athlete) {
+        return {
+            id: athlete.id.name,
+            gender: athlete.gender,
+            name: `${athlete.name.title} ${athlete.name.first} ${athlete.name.last}`,
+            pic: athlete.picture.medium,
+            email: athlete.email
+        }
+    }
 }

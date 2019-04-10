@@ -1,3 +1,3 @@
 import { DojoServiceProvider, DojoServiceConsumer } from './dojo-service-context';
 
-export { DojoServiceProvider , DojoServiceConsumer};
+export { DojoServiceProvider, DojoServiceConsumer};
