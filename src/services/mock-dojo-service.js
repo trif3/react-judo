@@ -3,7 +3,7 @@ export default class MockDojoService {
     _athletes = [
         {
             id: 1, 
-            name: 'Jeff Bezos (z)',
+            name: 'Jeff Bezos (mock)',
             gender: 'male',
             birth: 'January 12 1964',
             eyeColor: 'un'

@@ -4,45 +4,81 @@ import './app.css';
 
 import Header from '../header';
 import RandomAthlete from '../random-athlete/random-athlete';
-import ErrorBoundry from '../error-boundry';
+import ErrorCollector from '../error-collector';
 import DojoService from '../../services/dojo-service';
 import MockDojoService from '../../services/mock-dojo-service';
 
-import {} from '../pages';
+import {
+  AthletePage,
+  TeacherPage,
+  ChampionshipPage
+} from '../pages';
 
-class App extends Component {
+import { DojoServiceProvider } from '../dojo-service-context';
+
+import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
+import { ChampionshipDetails } from '../dojo-components/championship-details';
+
+export default class App extends Component {
+  
+  state = {
+    dojoService: new DojoService(),
+    isLoggedIn: false
+  };
+
+  onLogin = () => {
+    this.setState({
+      isLoggedIn: true
+    });
+  };
+
+  onServiceChange = () => {
+    this.setState( ({dojoService}) => {
+      const Service = dojoService instanceof DojoService ? MockDojoService : DojoService;
+      return { dojoService: new Service()};
+    });
+  };
+
   render() {
     return (
-      <div className="App">
-          <Header />
+      <ErrorCollector>
+        <DojoServiceProvider value={this.state.dojoService} >
+          <Router>
 
-        <header className="App-header">
 
-          <img src={logo} className="App-logo" alt="logo" />
+            <div className="App">
+              <Header onServiceChange={this.onServiceChange}/>
 
-          <RandomAthlete />
+              <header className="App-header">
 
-          <p>
-            Welcome to <code>JudoSport.gr</code> happy Ippon!
-          </p>
-          <p>
-            phone1: <code>694 827 8065</code> <br/> phone2: <code>694 551 7538</code>
-          </p>
-          <p>
-            Greece, Thessaloniki, Ampelokipoi, Dimotiko stadio Megas Alexandros
-          </p>
-          <a
-            className="App-link"
-            href="https://judosport.gr"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Kleitomaxos
-          </a>
-        </header>
-      </div>
+              <img src={logo} className="App-logo" alt="logo" />
+
+              <RandomAthlete />
+
+              <p>
+                Welcome to <code>JudoSport.gr</code> happy Ippon!
+              </p>
+              <p>
+                phone1: <code>694 827 8065</code> <br/> phone2: <code>694 551 7538</code>
+              </p>
+              <p>
+                Greece, Thessaloniki, Ampelokipoi, Dimotiko stadio Megas Alexandros
+              </p>
+              <a
+                className="App-link"
+                href="https://judosport.gr"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Kleitomaxos
+              </a>
+              </header>
+            </div>    
+
+
+          </Router>
+        </DojoServiceProvider>
+      </ErrorCollector>
     );
   }
 }
-
-export default App;

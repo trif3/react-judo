@@ -1,5 +1,5 @@
 import React from 'react';
-import ItemDetails from '../item-details';
+import ItemDetails , { Record } from '../item-details';
 import { withDojoService } from '../hoc-helpers';
 
 const ChampionshipDetails = (props) => {
@@ -10,3 +10,12 @@ const ChampionshipDetails = (props) => {
         </ItemDetails>
     );
 };
+
+const mapMethodsToProps = (dojoService) => {
+    return {
+        getDate: dojoService.getChampionship,
+        getImageUrl: dojoService.getChampionshipImage
+    }
+};
+
+export default withDojoService(mapMethodsToProps)(ChampionshipDetails);

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ErrorCollector from '../error-indicator';
+import ErrorIndicator from '../error-indicator';
 
 export default class ErrorCollector extends Component {
     state = {

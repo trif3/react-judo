@@ -2,18 +2,20 @@ import React from 'react';
 import { DojoServiceConsumer } from '../dojo-service-context';
 
 const withDojoService = (mapMethodsToProps) => (Wrapped) => {
-    return (
-        <DojoServiceConsumer>
-            {
-                (dojoService) => {
-                    const serviceProps = mapMethodsToProps(dojoService);
-                    return (
-                        <Wrapped {...props} {...serviceProps}/>
-                    );  
+    return (props) => {
+        return (
+            <DojoServiceConsumer>
+                {
+                    (dojoService) => {
+                        const serviceProps = mapMethodsToProps(dojoService);
+                        return (
+                            <Wrapped {...props} {...serviceProps}/>
+                        );  
+                    }
                 }
-            }
-        </DojoServiceConsumer>
-    );
+            </DojoServiceConsumer>
+        );
+    };
 };
 
 export default withDojoService;
