@@ -8,6 +8,8 @@ import ErrorCollector from '../error-collector';
 import DojoService from '../../services/dojo-service';
 import MockDojoService from '../../services/mock-dojo-service';
 
+
+
 import {
   AthletesPage,
   TeachersPage,
@@ -16,9 +18,7 @@ import {
 
 import { DojoServiceProvider } from '../dojo-service-context';
 
-import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
-import { ChampionshipDetails } from '../dojo-components/championship-details';
-import teacherDetails from '../dojo-components/teacher-details';
+import { BrowserRouter as Router, Switch, Route  } from 'react-router-dom';
 
 export default class App extends Component {
   
@@ -46,40 +46,21 @@ export default class App extends Component {
         <DojoServiceProvider value={this.state.dojoService} >
           <Router>
 
-
             <div className="App">
-              <Header onServiceChange={this.onServiceChange}/>
-
               <header className="App-header">
+              <Header onServiceChange={this.onServiceChange}/>
 
               <img src={logo} className="App-logo" alt="logo" />
 
               <RandomAthlete />
-              
 
               <Switch>
-                <Route path="/" render={() => <p>Welcome to <code>JudoSport.gr</code></p>} exact />
+                <Route path="/" render={() => <h2>Welcome to Judosport.gr</h2>} exact />
                 <Route path="/athletes/:id?" component={AthletesPage} />
               </Switch>
 
-              
-              <p>
-                phone1: <code>694 827 8065</code> <br/> phone2: <code>694 551 7538</code>
-              </p>
-              <p>
-                Greece, Thessaloniki, Ampelokipoi, Dimotiko stadio Megas Alexandros
-              </p>
-              <a
-                className="App-link"
-                href="https://judosport.gr"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Kleitomaxos
-              </a>
               </header>
             </div>    
-
 
           </Router>
         </DojoServiceProvider>

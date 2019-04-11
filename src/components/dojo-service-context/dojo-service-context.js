@@ -1,11 +1,11 @@
 import React from 'react';
 
 const {
-    Provider: DojoServiceProvider,
-    Cosumer: DojoServiceConsumer
+  Provider: DojoServiceProvider,
+  Consumer: DojoServiceConsumer
 } = React.createContext();
 
 export {
-    DojoServiceProvider,
-    DojoServiceConsumer
+  DojoServiceProvider,
+  DojoServiceConsumer
 };

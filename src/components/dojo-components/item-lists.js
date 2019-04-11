@@ -3,7 +3,6 @@ import ItemList from '../item-list';
 import { withData, withDojoService, withChildFunction, compose } from '../hoc-helpers';
 
 const renderName = ({name}) => <span>{name}</span>;
-const renderNameAndCity = ({name, city}) => <span>{name} - {city}</span>;
 
 const mapAthleteMethodsToProps = (dojoService) => {
     return {
