@@ -1,14 +1,14 @@
-import React from "react";
-import { Link } from 'react-router-dom'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-import "./header.css";
+import './header.css';
 
 const Header = ({ onServiceChange }) => {
   return (
     <div className="header d-flex">
       <h3>
         <Link to="/">
-          JudoSport.gr
+          judosport.gr
         </Link>
       </h3>
       <ul className="d-flex">
@@ -21,10 +21,18 @@ const Header = ({ onServiceChange }) => {
         <li>
           <Link to="/championships/">Championships</Link>
         </li>
+        <li>
+          <Link to="/login">Login</Link>
+        </li>
+        <li>
+          <Link to="/secret">Secret</Link>
+        </li>
       </ul>
 
-      <button onClick={onServiceChange} className="btn btn-primary btn-sm">
-        Virtual Dojo
+      <button
+          onClick={onServiceChange}
+          className="btn btn-primary btn-sm">
+        VR dojo
       </button>
     </div>
   );

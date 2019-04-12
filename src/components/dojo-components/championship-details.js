@@ -1,21 +1,22 @@
 import React from 'react';
-import ItemDetails , { Record } from '../item-details';
+import ItemDetails, { Record } from '../item-details';
 import { withDojoService } from '../hoc-helpers';
 
 const ChampionshipDetails = (props) => {
-    return (
-        <ItemDetails {...props}>
-            <Record field="name" label ="Name" />
-            <Record field="name" label ="Name" />
-        </ItemDetails>
-    );
+  return (
+    <ItemDetails {...props}>
+      <Record field="model" label="Model" />
+      <Record field="length" label="Length" />
+      <Record field="costInCredits" label="Cost" />
+    </ItemDetails>
+  );
 };
 
 const mapMethodsToProps = (dojoService) => {
-    return {
-        getDate: dojoService.getChampionship,
-        getImageUrl: dojoService.getChampionshipImage
-    }
+  return {
+    getData: dojoService.getChampionship,
+    getImageUrl: dojoService.getChampionshipImage
+  }
 };
 
 export default withDojoService(mapMethodsToProps)(ChampionshipDetails);

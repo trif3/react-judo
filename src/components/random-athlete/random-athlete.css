@@ -1,13 +1,25 @@
 .random-athlete {
-    display: flex;
-    padding: 1rem;
-    border: 1px solid #444;
-    margin-bottom: 1rem;
-  }
+  display: flex;
+  padding: 1rem;
+  border: 1px solid #444;
+  margin-bottom: 1rem;
+}
 
-  .random-athlete .athlete-image {
-    width: 150px;
-    height: 150px;
-    border-radius: 10px;
-    margin-right: 1rem;
-  }
+.random-athlete .athlete-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  margin-right: 1rem;
+}
+
+.random-athlete .list-group {
+  margin: 1rem 0 0 1rem;
+}
+
+.random-athlete .list-group-item {
+  padding: .25rem;
+}
+
+.random-athlete .list-group-item .term {
+  margin-right: .5rem;
+}

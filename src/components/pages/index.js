@@ -1,9 +1,13 @@
-import AthletesPage from './athlete-page';
+import AthletePage from './athlete-page';
 import TeachersPage from './teacher-page';
-import ChampionshipsPage from './championship-page';
+import ChampionshipPage from './championship-page';
+import LoginPage from './login-page';
+import SecretPage from './secret-page';
 
 export {
-    AthletesPage,
-    TeachersPage,
-    ChampionshipsPage
+  AthletePage,
+  TeachersPage,
+  ChampionshipPage,
+  LoginPage,
+  SecretPage
 };

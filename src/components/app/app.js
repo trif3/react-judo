@@ -1,27 +1,27 @@
 import React, { Component } from 'react';
-import logo from '../../imgs/logo.svg'; 
-import './app.css';
 
 import Header from '../header';
 import RandomAthlete from '../random-athlete';
-import ErrorCollector from '../error-collector';
+import ErrorBoundry from '../error-boundry';
 import DojoService from '../../services/dojo-service';
-import MockDojoService from '../../services/mock-dojo-service';
-
-
+import VirtualDojoService from '../../services/virtual-dojo-service';
 
 import {
-  AthletesPage,
+  AthletePage,
   TeachersPage,
-  ChampionshipsPage
-} from '../pages';
+  ChampionshipPage,
+  LoginPage,
+  SecretPage } from '../pages';
 
 import { DojoServiceProvider } from '../dojo-service-context';
 
-import { BrowserRouter as Router, Switch, Route  } from 'react-router-dom';
+import './app.css';
+
+import {BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import ChampionshipDetails from '../dojo-components/championship-details';
 
 export default class App extends Component {
-  
+
   state = {
     dojoService: new DojoService(),
     isLoggedIn: false
@@ -34,37 +34,61 @@ export default class App extends Component {
   };
 
   onServiceChange = () => {
-    this.setState( ({dojoService}) => {
-      const Service = dojoService instanceof DojoService ? MockDojoService : DojoService;
-      return { dojoService: new Service()};
+    this.setState(({ dojoService }) => {
+      const Service = dojoService instanceof DojoService ?
+                        VirtualDojoService : DojoService;
+      return {
+        dojoService: new Service()
+      };
     });
   };
 
   render() {
+
+    const { isLoggedIn } = this.state;
+
     return (
-      <ErrorCollector>
+      <ErrorBoundry>
         <DojoServiceProvider value={this.state.dojoService} >
           <Router>
-
-            <div className="App">
-              <header className="App-header">
-              <Header onServiceChange={this.onServiceChange}/>
-
-              <img src={logo} className="App-logo" alt="logo" />
-
+            <div className="dojo-app">
+              <Header onServiceChange={this.onServiceChange} />
               <RandomAthlete />
 
               <Switch>
-                <Route path="/" render={() => <h2>Welcome to Judosport.gr</h2>} exact />
-                <Route path="/athletes/:id?" component={AthletesPage} />
+                <Route path="/"
+                       render={() => <h2>Welcome to Judosport.gr</h2>}
+                       exact />
+                <Route path="/athletes/:id?" component={AthletePage} />
+                <Route path="/teachers" component={TeachersPage} />
+                <Route path="/championships" exact component={ChampionshipPage} />
+                <Route path="/championships/:id"
+                       render={({ match }) => {
+                         const { id } = match.params;
+                         return <ChampionshipDetails itemId={id} />
+                       }}/>
+
+                <Route
+                  path="/login"
+                  render={() => (
+                    <LoginPage
+                      isLoggedIn={isLoggedIn}
+                      onLogin={this.onLogin}/>
+                  )}/>
+
+                <Route
+                  path="/secret"
+                  render={() => (
+                    <SecretPage isLoggedIn={isLoggedIn} />
+                  )}/>
+
+                <Route render={() => <h2>Wrong way!</h2>} />
               </Switch>
 
-              </header>
-            </div>    
-
+            </div>
           </Router>
         </DojoServiceProvider>
-      </ErrorCollector>
+      </ErrorBoundry>
     );
   }
 }
