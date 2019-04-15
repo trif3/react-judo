@@ -54,12 +54,8 @@ export default class App extends Component {
               <Header onServiceChange={this.onServiceChange} />
               {/* <RandomAthlete /> */}
 
-              <Info />
-
               <Switch>
-                <Route path="/"
-                       render={() => <h2>Welcome to Judosport.gr</h2>}
-                       exact />
+                <Route path="/" render={() => (<Info />)} exact />
                 <Route path="/athletes/:id?" component={AthletePage} />
                 <Route path="/teachers" component={TeachersPage} />
                 <Route path="/championships" exact component={ChampionshipPage} />
