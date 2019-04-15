@@ -1,0 +1,14 @@
+.card {
+    display: flex;
+    padding: 1rem;
+    border: 1px solid #444;
+    margin-bottom: 1rem;
+    max-width: 25rem;
+}
+
+.card {
+    width: 350px;
+    height: 350px;
+    border-radius: 15px;
+    margin-right: 1rem;
+}

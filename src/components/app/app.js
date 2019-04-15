@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-
 import Header from '../header';
-import RandomAthlete from '../random-athlete';
 import ErrorBoundry from '../error-boundry';
 import DojoService from '../../services/dojo-service';
 import VirtualDojoService from '../../services/virtual-dojo-service';
@@ -19,6 +17,7 @@ import './app.css';
 
 import {BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import ChampionshipDetails from '../dojo-components/championship-details';
+import Info from '../info';
 
 export default class App extends Component {
 
@@ -53,7 +52,9 @@ export default class App extends Component {
           <Router>
             <div className="dojo-app">
               <Header onServiceChange={this.onServiceChange} />
-              <RandomAthlete />
+              {/* <RandomAthlete /> */}
+
+              <Info />
 
               <Switch>
                 <Route path="/"
