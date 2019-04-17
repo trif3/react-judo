@@ -79,7 +79,7 @@ export default class App extends Component {
                     <SecretPage isLoggedIn={isLoggedIn} />
                   )}/>
 
-                <Route render={() => <h2>Wrong way!</h2>} />
+                <Route path="*" render={() => <h2>Wrong way!</h2>} />
               </Switch>
 
             </div>
