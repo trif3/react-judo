@@ -11,23 +11,15 @@
 }
 
 .header ul li:hover {
-  background-color: #444;
+  background-color: rgb(204, 205, 209);
 }
 
 .header a:hover {
   text-decoration: none;
 }
 
-.header h3 a {
-  color: white;
-}
-
-.header h3 a:hover {
-  color: #00bc8c;
-}
-
-.header button {
-  height: 2.2rem;
+.ui button {
+  height: 3.2rem;
   margin-top: 1px;
   margin-left: 3px;
 }

@@ -5,13 +5,13 @@ import './header.css';
 
 const Header = ({ onServiceChange }) => {
   return (
-    <div className="header d-flex">
-      <h3>
+    <div className="header ui menu">
+      <h4>
         <Link to="/">
           judosport.gr
         </Link>
-      </h3>
-      <ul className="d-flex">
+      </h4>
+      <ul className="item">
         <li>
           <Link to="/athletes/">Athletes</Link>
         </li>
@@ -31,7 +31,7 @@ const Header = ({ onServiceChange }) => {
 
       <button
           onClick={onServiceChange}
-          className="btn btn-primary btn-sm">
+          className="ui button">
         VR dojo
       </button>
     </div>
