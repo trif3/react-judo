@@ -8,11 +8,11 @@ const Header = ({ onServiceChange }) => {
   return (
     <div className="header ui secondary  menu">
       <ul className="item">
-        <li>
+        <h1>
           <Link to="/">
            <img src={logo} className="header-logo" alt="logo" /> 
           </Link>
-        </li>
+        </h1>
         <li>
           <Link to="/athletes/">Athletes</Link>
         </li>
