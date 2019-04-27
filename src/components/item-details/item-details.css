@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: row;
   padding: 1rem;
-  border: 1px solid #444;
+  border: 1px solid rgb(163, 222, 233);
 }
 
 .item-details .item-image {

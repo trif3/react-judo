@@ -6,34 +6,19 @@ import './header.css';
 
 const Header = ({ onServiceChange }) => {
   return (
-    <div className="header ui secondary  menu">
-      <ul className="item">
+    <div className="header d-flex">
+      <ul className="d-flex">
         <h1>
           <Link to="/">
            <img src={logo} className="header-logo" alt="logo" /> 
           </Link>
         </h1>
-        <li>
-          <Link to="/athletes/">Athletes</Link>
-        </li>
-        <li>
-          <Link to="/teachers/">Teachers</Link>
-        </li>
-        <li>
-          <Link to="/championships/">Championships</Link>
-        </li>
-        <li>
-          <Link to="/login">Login</Link>
-        </li>
-        <li>
-          <Link to="/secret">Secret</Link>
-        </li>
 
         <li>
           <button
             onClick={onServiceChange}
-            className="ui button">
-            VR
+            className="btn btn-secondary my-2 my-sm-0">
+            virtual Dojo
           </button>
         </li>
       </ul>
