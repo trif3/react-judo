@@ -9,36 +9,36 @@ export default class NavBar extends Component {
     render() {
         return (
             <div>
-                <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-                    <a class="navbar-brand" href="/">judosport.gr</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
+                    <a className="navbar-brand" href="/">judosport.gr</a>
+                    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                        <span className="navbar-toggler-icon"></span>
                     </button>
 
-                    <div class="collapse navbar-collapse" id="navbarColor01">
-                        <ul class="navbar-nav mr-auto">
-                            <li class="nav-item active">
+                    <div className="collapse navbar-collapse" id="navbarColor01">
+                        <ul className="navbar-nav mr-auto">
+                            <li className="nav-item active">
                                 <Link className="nav-link" to="/teachers/">
                                     Athletes
-                                    <span class="sr-only">(current)</span>
+                                    <span className="sr-only">(current)</span>
                                 </Link>
                             </li>
-                            <li class="nav-item">
+                            <li className="nav-item">
                                 <Link className="nav-link" to="/teachers/">
                                     Teachers
                                 </Link>
                             </li>
-                            <li class="nav-item">
+                            <li className="nav-item">
                                 <Link className="nav-link" to="/championships/">
                                     Championships
                                 </Link>
                             </li>
-                            <li class="nav-item">
+                            <li className="nav-item">
                                 <Link className="nav-link" to="/login">
                                     Login
                                 </Link>
                             </li>
-                            <li class="nav-item">
+                            <li className="nav-item">
                                 <Link className="nav-link" to="/secret">
                                     Secret
                                 </Link>
