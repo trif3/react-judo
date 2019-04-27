@@ -18,7 +18,6 @@ import './app.css';
 import {BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import ChampionshipDetails from '../dojo-components/championship-details';
 import Info from '../info';
-import NavBar from '../navBar';
 
 export default class App extends Component {
 
@@ -52,8 +51,6 @@ export default class App extends Component {
         <DojoServiceProvider value={this.state.dojoService} >
           <Router>
             <div className="dojo-app">
-              <NavBar />
-
               <Header onServiceChange={this.onServiceChange} />
               {/* <RandomAthlete /> */}
 
