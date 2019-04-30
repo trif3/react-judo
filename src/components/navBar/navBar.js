@@ -3,20 +3,40 @@ import { Link } from 'react-router-dom';
 
 // import logo from '../../imgs/logo.svg';
 
-import './navBar.css';
+import './navbar.css';
 
 export default class NavBar extends Component {
+
+    constructor() {
+        super();
+        this.state = {
+            isOpen: false,
+            btnClassName: "collapsed",
+            ariaExpanded: "false",
+            show: "",
+        };
+    };
+
     render() {
+
+        const { btnClassName, ariaExpanded, show, navIcon } = this.state;
         return (
             <div>
-                <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
+                <nav className="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
                     <a className="navbar-brand" href="/">judosport.gr</a>
-                    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-                        <span className="navbar-toggler-icon"></span>
+                    <button onClick = {this.toggle} 
+                            className={`navbar-toggler ${btnClassName}`} 
+                            type="button" 
+                            data-toggle="collapse" 
+                            data-target="#navbarResponsive" 
+                            aria-controls="navbarResponsive" 
+                            aria-expanded={ ariaExpanded } 
+                            aria-label="Toggle navigation">
+                        <span className={"navbar-toggler-icon"}></span>
                     </button>
 
-                    <div className="collapse navbar-collapse" id="navbarColor01">
-                        <ul className="navbar-nav mr-auto">
+                    <div className={`collapse navbar-collapse ${show}`} id="navbarResponsive">
+                        <ul onClick={this.toggleClose} className="navbar-nav mr-auto">
                             <li className="nav-item active">
                                 <Link className="nav-link" to="/teachers/">
                                     Athletes
@@ -49,21 +69,21 @@ export default class NavBar extends Component {
             </div>
         );
     }
+
+    toggle = () => {
+        const { isOpen } = this.state;
+        this.setState({
+            isOpen: !this.state.isOpen,
+            btnClassName: (isOpen) ? "collapsed" : "",
+            ariaExpanded: (isOpen) ? "false" : "",
+            show: (isOpen) ? "" : "show"
+        })
+    }
+
+    toggleClose = () => {
+        const { isOpen } = this.state;
+        if(isOpen) {
+            this.toggle();
+        } 
+    }
 }
-
-
-
-// export default class Info extends Component {
-//     render() {
-//         return(
-//             <div className="card text-white bg-info">
-//                 <div className="card-body">
-//                 <img src={logo} className="dojo-logo" alt="logo" />
-//                     <h4 className="card-title">JudoSport.gr</h4>
-//                     <p className="card-text">phone1: <code>694 827 8065</code> <br/> phone2: <code>694 551 7538</code></p>	
-//                     <address className="card-text">Greece, <br/>Thessaloniki, Ampelokipoi, <br/>Dimotiko stadio Megas Alexandros</address>
-//                 </div>
-//             </div> 
-//         );
-//     }
-// };

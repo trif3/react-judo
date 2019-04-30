@@ -18,7 +18,7 @@ import './app.css';
 import {BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import ChampionshipDetails from '../dojo-components/championship-details';
 import Info from '../info';
-import NavBar from '../navBar';
+import NavBar from '../navbar';
 
 export default class App extends Component {
 
