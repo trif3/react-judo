@@ -19,7 +19,7 @@ export default class NavBar extends Component {
 
     render() {
 
-        const { btnClassName, ariaExpanded, show, navIcon } = this.state;
+        const { btnClassName, ariaExpanded, show } = this.state;
         return (
             <div>
                 <nav className="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
