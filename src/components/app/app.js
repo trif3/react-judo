@@ -19,7 +19,6 @@ import {BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import ChampionshipDetails from '../dojo-components/championship-details';
 import Info from '../info';
 import NavBar from '../nav-bar';
-import Ads from '../ads';
 
 export default class App extends Component {
 
@@ -52,11 +51,10 @@ export default class App extends Component {
       <ErrorBoundry>
         <DojoServiceProvider value={this.state.dojoService} >
           <Router>
-            <div className="dojo-app">
+            <div className="dojo-app jumbotron">
               <NavBar />
 
               <Header onServiceChange={this.onServiceChange} />
-              {/* <RandomAthlete /> */}
 
               <Switch>
                 <Route path="/" render={() => (<Info />)} exact />
@@ -86,7 +84,6 @@ export default class App extends Component {
                 <Route path="*" render={() => <h2>Wrong way!</h2>} />
               </Switch>
 
-              <Ads />
             </div>
           </Router>
         </DojoServiceProvider>

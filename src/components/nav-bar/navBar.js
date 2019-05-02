@@ -35,7 +35,7 @@ export default class NavBar extends Component {
                     <div className={`collapse navbar-collapse ${show}`} id="navbarResponsive">
                         <ul onClick={this.toggleClose} className="navbar-nav mr-auto">
                             <li className="nav-item active">
-                                <Link className="nav-link" to="/teachers/">
+                                <Link className="nav-link" to="/athletes/">
                                     Athletes
                                     <span className="sr-only">(current)</span>
                                 </Link>
