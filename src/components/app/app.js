@@ -19,6 +19,7 @@ import {BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import ChampionshipDetails from '../dojo-components/championship-details';
 import Info from '../info';
 import NavBar from '../nav-bar';
+import Ads from '../ads';
 
 export default class App extends Component {
 
@@ -85,6 +86,7 @@ export default class App extends Component {
                 <Route path="*" render={() => <h2>Wrong way!</h2>} />
               </Switch>
 
+              <Ads />
             </div>
           </Router>
         </DojoServiceProvider>
