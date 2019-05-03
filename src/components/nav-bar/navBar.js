@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import { Link } from 'react-router-dom';
+import { TiThMenu, TiThMenuOutline } from 'react-icons/ti'
 import './navbar.css';
 
 export default class NavBar extends Component {
@@ -11,12 +12,13 @@ export default class NavBar extends Component {
             btnClassName: "collapsed",
             ariaExpanded: "false",
             show: "",
+            navIcon: <TiThMenu className='navicon'/>
         };
     };
 
     render() {
 
-        const { btnClassName, ariaExpanded, show } = this.state;
+        const { btnClassName, ariaExpanded, show , navIcon} = this.state;
         return (
             <div>
                 <nav className="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
@@ -29,7 +31,8 @@ export default class NavBar extends Component {
                             aria-controls="navbarResponsive" 
                             aria-expanded={ ariaExpanded } 
                             aria-label="Toggle navigation">
-                        <span className={"navbar-toggler-icon"}></span>
+                        {/* <span className={"navbar-toggler-icon"}></span> */}
+                        {navIcon}
                     </button>
 
                     <div className={`collapse navbar-collapse ${show}`} id="navbarResponsive">
@@ -73,7 +76,8 @@ export default class NavBar extends Component {
             isOpen: !this.state.isOpen,
             btnClassName: (isOpen) ? "collapsed" : "",
             ariaExpanded: (isOpen) ? "false" : "",
-            show: (isOpen) ? "" : "show"
+            show: (isOpen) ? "" : "show",
+            navIcon: (isOpen) ? <TiThMenu className='navicon'/> : <TiThMenuOutline className='navicon'/>
         })
     }
 
