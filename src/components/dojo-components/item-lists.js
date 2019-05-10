@@ -3,8 +3,8 @@ import ItemList from '../item-list';
 import {
   withData,
   withDojoService,
-  withChildFunction,
-  compose } from '../hoc-helpers';
+  withChildFunction } from '../hoc-helpers';
+import compose from '../../utils/compose';
 
 const renderName = ({ name }) => <span>{name}</span>;
 
