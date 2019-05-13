@@ -1,8 +1,12 @@
 import React, { Component } from 'react';
+import { Provider } from 'react-redux';
+
 import Header from '../header';
 import ErrorBoundry from '../error-boundry';
+
 import DojoService from '../../services/dojo-service';
 import VirtualDojoService from '../../services/virtual-dojo-service';
+import VirtualDojoClubService from '../../services/virtual-dojo-club-service';
 
 import {
   AthletePage,
@@ -46,6 +50,10 @@ export default class App extends Component {
   render() {
 
     const { isLoggedIn } = this.state;
+    
+    const vrClubService  = new VirtualDojoClubService();
+    const jenny = vrClubService.getDojoClub();
+    console.log(jenny.club.dojos[0].athletes);
 
     return (
       <ErrorBoundry>
