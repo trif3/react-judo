@@ -3,6 +3,7 @@ export default class VirtualDojoClubService {
         club: {
             dojos: [
                 {
+                    id: 1,
                     name: "J one",
                     details: "more info",
                     athletes: [
