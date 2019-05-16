@@ -2,18 +2,18 @@ import React, { Component } from 'react';
 import ClubDojo from '../club-dojo';
 import { connect } from 'react-redux';
 
+import { withDojoClubService } from '../hoc-helpers';
 
 import './club.css';
 
 class Club extends Component {
 
     componentDidMount() {
-
+        console.log(this.props)
     }
 
     render() {
         const {dojos} = this.props;
-        console.log(this.props)
         return(
             <ul>
                 {
@@ -31,7 +31,6 @@ class Club extends Component {
 }
 
 const mapStateToProps = (state) => {
-    console.log(state)
     return { 
         dojos: state.club.dojos
      }
