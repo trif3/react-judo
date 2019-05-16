@@ -8,7 +8,6 @@ import ErrorBoundry from '../error-boundry';
 
 import DojoService from '../../services/dojo-service';
 import VirtualDojoService from '../../services/virtual-dojo-service';
-import VirtualDojoClubService from '../../services/virtual-dojo-club-service';
 
 import {
   AthletePage,
@@ -74,7 +73,9 @@ export default class App extends Component {
                           const { id } = match.params;
                           return <ChampionshipDetails itemId={id} />
                         }}/>
+
                   <Route path="/club" component={ClubPage}/>
+
                   <Route
                     path="/login"
                     render={() => (
