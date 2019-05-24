@@ -8,7 +8,6 @@ export default class DojoService {
   getDojoClub = async () => {  
     const service = new VirtualDojoClubService()
     const dojoClubData = service.getDojoClub();
-    console.log(dojoClubData);
     return await dojoClubData;
   }
 

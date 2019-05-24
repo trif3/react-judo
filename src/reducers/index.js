@@ -1,12 +1,6 @@
 const initialState = {
   club: {
-      dojos: [
-          {
-              id:1, 
-              name: 'dojo one',
-              details: ' det l s'
-          }
-      ]
+      dojos: []
   }
 };
 

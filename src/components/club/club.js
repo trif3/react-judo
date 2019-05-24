@@ -9,7 +9,15 @@ import './club.css';
 class Club extends Component {
 
     componentDidMount() {
+        const { dojoClubService } = this.props;
+        const data = dojoClubService.getDojoClub();
+
+        
+
+        console.log(data)
         console.log(this.props)
+
+        // this.props.clubLoaded(data);
     }
 
     render() {
@@ -36,4 +44,17 @@ const mapStateToProps = (state) => {
      }
 }
 
-export default connect(mapStateToProps)(Club);
+const mapDispatchToProps = (dispatch) => {
+    return {
+        clubLoaded: (dojos) => {
+            dispatch({
+                type: 'CLUB_LOADED',
+                payload: dojos
+            })
+        }
+    }
+}
+
+export default withDojoClubService()
+    (connect(mapStateToProps, mapDispatchToProps)(Club)
+);
