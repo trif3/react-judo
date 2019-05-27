@@ -5,10 +5,10 @@ export default class DojoService {
   _apiBase = 'https://swapi.co/api';
   _imageBase = 'https://starwars-visualguide.com/assets/img';
 
-  getDojoClub = async () => {  
+  getDojoClub = () => {  
     const service = new VirtualDojoClubService()
     const dojoClubData = service.getDojoClub();
-    return await dojoClubData;
+    return dojoClubData;
   }
 
   getResource = async (url) => {

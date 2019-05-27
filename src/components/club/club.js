@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import ClubDojo from '../club-dojo';
 import { connect } from 'react-redux';
-
 import { withDojoClubService } from '../hoc-helpers';
-
+import { clubLoaded } from '../../actions';
+import { compose } from '../../utils';
 import './club.css';
 
 class Club extends Component {
@@ -12,12 +12,7 @@ class Club extends Component {
         const { dojoClubService } = this.props;
         const data = dojoClubService.getDojoClub();
 
-        
-
-        console.log(data)
-        console.log(this.props)
-
-        // this.props.clubLoaded(data);
+        this.props.clubLoaded(data.club);
     }
 
     render() {
@@ -44,17 +39,38 @@ const mapStateToProps = (state) => {
      }
 }
 
-const mapDispatchToProps = (dispatch) => {
-    return {
-        clubLoaded: (dojos) => {
-            dispatch({
-                type: 'CLUB_LOADED',
-                payload: dojos
-            })
-        }
-    }
+const mapDispatchToProps = {
+    clubLoaded
 }
 
-export default withDojoClubService()
-    (connect(mapStateToProps, mapDispatchToProps)(Club)
-);
+// const mapDispatchToProps = (dispatch) => {
+//     return bindActionCreators({
+//         clubLoaded
+//     }, dispatch)
+// }
+
+
+// const mapDispatchToProps = (dispatch) => {
+//     return {
+//         clubLoaded: (dojos) => {
+//             dispatch(clubLoaded(dojos))
+//         }
+//     }
+// }
+
+
+// const mapDispatchToProps = (dispatch) => {
+//     return {
+//         clubLoaded: (dojos) => {
+//             dispatch({
+//                 type: 'CLUB_LOADED',
+//                 payload: dojos
+//             })
+//         }
+//     }
+// }
+
+export default compose(
+    withDojoClubService(),
+    connect(mapStateToProps, mapDispatchToProps)
+)(Club);
