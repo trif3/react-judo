@@ -63,35 +63,38 @@ export default class App extends Component {
 
                 <Header onServiceChange={this.onServiceChange} />
 
-                <Switch>
-                  <Route path="/" render={() => (<Info />)} exact />
-                  <Route path="/athletes/:id?" component={AthletePage} />
-                  <Route path="/teachers" component={TeachersPage} />
-                  <Route path="/championships" exact component={ChampionshipPage} />
-                  <Route path="/championships/:id"
-                        render={({ match }) => {
-                          const { id } = match.params;
-                          return <ChampionshipDetails itemId={id} />
-                        }}/>
+                <main role="main" className="container">
+                  <Switch>
+                    <Route path="/" render={() => (<Info />)} exact />
+                    <Route path="/athletes/:id?" component={AthletePage} />
+                    <Route path="/teachers" component={TeachersPage} />
+                    <Route path="/championships" exact component={ChampionshipPage} />
+                    <Route path="/championships/:id"
+                          render={({ match }) => {
+                            const { id } = match.params;
+                            return <ChampionshipDetails itemId={id} />
+                          }}/>
 
-                  <Route path="/club" component={ClubPage}/>
+                    <Route path="/club" component={ClubPage}/>
 
-                  <Route
-                    path="/login"
-                    render={() => (
-                      <LoginPage
-                        isLoggedIn={isLoggedIn}
-                        onLogin={this.onLogin}/>
-                    )}/>
+                    <Route
+                      path="/login"
+                      render={() => (
+                        <LoginPage
+                          isLoggedIn={isLoggedIn}
+                          onLogin={this.onLogin}/>
+                      )}/>
 
-                  <Route
-                    path="/secret"
-                    render={() => (
-                      <SecretPage isLoggedIn={isLoggedIn} />
-                    )}/>
+                    <Route
+                      path="/secret"
+                      render={() => (
+                        <SecretPage isLoggedIn={isLoggedIn} />
+                      )}/>
 
-                  <Route path="*" render={() => <h2>Wrong way!</h2>} />
-                </Switch>
+                    <Route path="*" render={() => <h2>Wrong way!</h2>} />
+                  </Switch>
+                </main>
+                
 
               </div>
             </Router>

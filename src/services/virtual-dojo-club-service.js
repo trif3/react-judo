@@ -6,6 +6,8 @@ export default class VirtualDojoClubService {
                     id: 1,
                     name: "Dojo One",
                     details: "Dojo one is the main dojo",
+                    brandImage: 'https://judosport.gr/static/media/logo.86fd73e8.svg',
+                    address: "Thessaloniki, Ampelokipoi, Alexander the Great Stadium",
                     athletes: [
                         {
                             id: 1,
@@ -84,6 +86,8 @@ export default class VirtualDojoClubService {
                     id: 2,
                     name: "Dojo Second",
                     details: "Dojo Second is the second dojo",
+                    brandImage: 'https://judosport.gr/static/media/logo.86fd73e8.svg',
+                    address: "Athens, Acropolis",
                     athletes: [
                         {
                             id: 1,

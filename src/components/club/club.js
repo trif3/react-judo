@@ -18,7 +18,7 @@ class Club extends Component {
     render() {
         const {dojos} = this.props;
         return(
-            <ul>
+            <ul className="club">
                 {
                     dojos.map( (dojo) => {
                         return (

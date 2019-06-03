@@ -1,13 +1,20 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import './club-dojo.css'
 
 const ClubDojo = ( {dojo} ) => {
-    const {name, details } = dojo;
+    const {id, name, details, brandImage } = dojo;
+    console.log(brandImage)
     return (
-        <Fragment>
-            <span>{name}</span>
-            <span>{details}</span>
-        </Fragment>
+        <div className="club-dojo">
+            <div className="brand-image">
+                <img src={brandImage} alt="brand" />
+            </div>
+            <div className="club-dojo-details">
+                <a href="#">{id}. </a>
+                <a href="#" className="dojo-name">{name}</a>
+                <div className="dojo-details">{details}</div>
+            </div>
+        </div>
     )
 }
 
