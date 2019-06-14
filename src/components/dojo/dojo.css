@@ -1,0 +1,30 @@
+.club-dojo {
+    display: flex;
+    margin: 15px;
+}
+
+.club-dojo .brand-image {
+    flex-shrink: 0;
+    width: 110px;
+    margin-right: 30px;
+}
+
+.club-dojo .brand-image img {
+    max-width: 100%;
+}
+
+.club-dojo .club-dojo-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    align-items: flex-start;
+}
+
+.club-dojo .club-dojo-details .dojo-name{
+    font-size: 1.2rem;
+}
+
+.club-dojo .club-dojo-details .dojo-address{
+    font-size: 0.8rem;
+}

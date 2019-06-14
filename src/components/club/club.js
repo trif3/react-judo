@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ClubDojo from '../club-dojo';
+import Dojo from '../dojo';
 import { connect } from 'react-redux';
 import { withDojoClubService } from '../hoc-helpers';
 import { clubLoaded } from '../../actions';
@@ -23,7 +23,7 @@ class Club extends Component {
                     dojos.map( (dojo) => {
                         return (
                             <li key={dojo.id}>
-                                <ClubDojo dojo={dojo}/>
+                                <Dojo dojo={dojo}/>
                             </li>
                         )
                     })
