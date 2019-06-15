@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
+import { Provider } from 'react-redux';
+
+import store from '../../store';
+
 import Header from '../header';
 import ErrorBoundry from '../error-boundry';
+
 import DojoService from '../../services/dojo-service';
 import VirtualDojoService from '../../services/virtual-dojo-service';
 
@@ -19,6 +24,7 @@ import {BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import ChampionshipDetails from '../dojo-components/championship-details';
 import Info from '../info';
 import NavBar from '../nav-bar';
+import ClubPage from '../pages/club-page';
 
 export default class App extends Component {
 
@@ -46,48 +52,55 @@ export default class App extends Component {
   render() {
 
     const { isLoggedIn } = this.state;
-
+    
     return (
-      <ErrorBoundry>
-        <DojoServiceProvider value={this.state.dojoService} >
-          <Router>
-            <div className="dojo-app jumbotron">
-              <NavBar />
+      <Provider store = {store}>
+        <ErrorBoundry>
+          <DojoServiceProvider value={this.state.dojoService} >
+            <Router>
+              <div className="dojo-app jumbotron">
+                <NavBar />
 
-              <Header onServiceChange={this.onServiceChange} />
+                <Header onServiceChange={this.onServiceChange} />
 
-              <Switch>
-                <Route path="/" render={() => (<Info />)} exact />
-                <Route path="/athletes/:id?" component={AthletePage} />
-                <Route path="/teachers" component={TeachersPage} />
-                <Route path="/championships" exact component={ChampionshipPage} />
-                <Route path="/championships/:id"
-                       render={({ match }) => {
-                         const { id } = match.params;
-                         return <ChampionshipDetails itemId={id} />
-                       }}/>
+                <main role="main" className="container">
+                  <Switch>
+                    <Route path="/" render={() => (<Info />)} exact />
+                    <Route path="/athletes/:id?" component={AthletePage} />
+                    <Route path="/teachers" component={TeachersPage} />
+                    <Route path="/championships" exact component={ChampionshipPage} />
+                    <Route path="/championships/:id"
+                          render={({ match }) => {
+                            const { id } = match.params;
+                            return <ChampionshipDetails itemId={id} />
+                          }}/>
 
-                <Route
-                  path="/login"
-                  render={() => (
-                    <LoginPage
-                      isLoggedIn={isLoggedIn}
-                      onLogin={this.onLogin}/>
-                  )}/>
+                    <Route path="/club" component={ClubPage}/>
 
-                <Route
-                  path="/secret"
-                  render={() => (
-                    <SecretPage isLoggedIn={isLoggedIn} />
-                  )}/>
+                    <Route
+                      path="/login"
+                      render={() => (
+                        <LoginPage
+                          isLoggedIn={isLoggedIn}
+                          onLogin={this.onLogin}/>
+                      )}/>
 
-                <Route path="*" render={() => <h2>Wrong way!</h2>} />
-              </Switch>
+                    <Route
+                      path="/secret"
+                      render={() => (
+                        <SecretPage isLoggedIn={isLoggedIn} />
+                      )}/>
 
-            </div>
-          </Router>
-        </DojoServiceProvider>
-      </ErrorBoundry>
+                    <Route path="*" render={() => <h2>Wrong way!</h2>} />
+                  </Switch>
+                </main>
+                
+
+              </div>
+            </Router>
+          </DojoServiceProvider>
+        </ErrorBoundry>
+      </Provider>
     );
   }
 }

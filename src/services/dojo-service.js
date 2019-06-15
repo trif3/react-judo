@@ -1,7 +1,15 @@
+import VirtualDojoClubService from './virtual-dojo-club-service';
+
 export default class DojoService {
 
   _apiBase = 'https://swapi.co/api';
   _imageBase = 'https://starwars-visualguide.com/assets/img';
+
+  getDojoClub = () => {  
+    const service = new VirtualDojoClubService()
+    const dojoClubData = service.getDojoClub();
+    return dojoClubData;
+  }
 
   getResource = async (url) => {
     const res = await fetch(`${this._apiBase}${url}`);

@@ -35,7 +35,8 @@ const RightInfo = () => {
         <React.Fragment>
             <div className="card-body">
                 <h4 className="card-title">JudoSport.gr</h4>
-                <p className="card-text"><FaPhoneSquare /> <code>694 827 8065</code> <br/> <FaPhoneSquare /> <code>694 551 7538</code></p>	
+                <p className="card-text">Doumas Alexandros <br/> <FaPhoneSquare /> <code>694 827 8065</code></p>
+                <p className="card-text">Zafiridis Trifon <br/> <FaPhoneSquare /> <code>694 551 7538</code></p>	
                 <address className="card-text">Greece, <br/>Thessaloniki, Ampelokipoi, <br/>Dimotiko stadio Megas Alexandros</address>
             </div>
         </React.Fragment>
