@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import logo from '../../imgs/logo.svg';
 
 import './header.css';
-
+import Compare from '../compare';
 const Header = ({ onServiceChange }) => {
   return (
     <div className="header d-flex">
@@ -21,9 +21,9 @@ const Header = ({ onServiceChange }) => {
             virtual Dojo
           </button>
         </li>
+
+        <Compare numItems={1} total={2}/>
       </ul>
-
-
     </div>
   );
 };
