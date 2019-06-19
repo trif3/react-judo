@@ -10,9 +10,10 @@ class Club extends Component {
 
     componentDidMount() {
         const { dojoClubService } = this.props;
-        const data = dojoClubService.getDojoClub();
-
-        this.props.clubLoaded(data.club);
+        dojoClubService.getDojoClub()
+            .then((data) => {
+                this.props.clubLoaded(data.club)
+            });
     }
 
     render() {

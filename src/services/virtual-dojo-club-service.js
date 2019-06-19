@@ -167,6 +167,10 @@ export default class VirtualDojoClubService {
     }
 
     getDojoClub() {
-        return this._data
+        return new Promise((resolve) => {
+            setTimeout(() => {
+                resolve(this._data)
+            }, 700)
+        });
     }
 }
