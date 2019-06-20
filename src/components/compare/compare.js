@@ -1,19 +1,20 @@
 import React from 'react';
 import { FaRegClone } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 
 const Compare = ({numItems, total}) => {
     return(
         <div>
-            <a className="compareIco textd-dark" href="#"><FaRegClone /> c </a>
-            <a>
-                <i className="cart-icon"/>
-                {numItems} dojo(s) in{total}
-            </a>
-            <a>
-            <i class="fas fa-compress-arrows-alt"></i>
-            </a>
-
+            <Link to="/">
+                <div className="compareIco textd-dark" href="#"><FaRegClone /> c </div>
+            </Link>
+            <Link to="/compare">
+                <div>
+                    <i className="cart-icon"/>
+                    {numItems} dojo(s) in{total}
+                </div>
+            </Link>
         </div>
     );
 };

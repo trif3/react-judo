@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Dojo from '../dojo';
+import Spinner from '../spinner'
 import { connect } from 'react-redux';
 import { withDojoClubService } from '../hoc-helpers';
 import { clubLoaded } from '../../actions';
@@ -9,15 +10,16 @@ import './club.css';
 class Club extends Component {
 
     componentDidMount() {
-        const { dojoClubService } = this.props;
+        const { dojoClubService, clubLoaded } = this.props;
         dojoClubService.getDojoClub()
-            .then((data) => {
-                this.props.clubLoaded(data.club)
-            });
+            .then((data) => clubLoaded(data.club));
     }
 
     render() {
-        const {dojos} = this.props;
+        const {dojos, loading } = this.props;
+        if(loading){
+            return <Spinner />
+        }
         return(
             <ul className="club">
                 {
@@ -36,7 +38,8 @@ class Club extends Component {
 
 const mapStateToProps = (state) => {
     return { 
-        dojos: state.club.dojos
+        dojos: state.club.dojos,
+        loading: state.loading
      }
 }
 
