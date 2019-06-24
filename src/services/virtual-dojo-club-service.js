@@ -167,9 +167,14 @@ export default class VirtualDojoClubService {
     }
 
     getDojoClub() {
-        return new Promise((resolve) => {
+        return new Promise((resolve, reject) => {
             setTimeout(() => {
-                resolve(this._data)
+                //Throw error 1/4 times. just for fun!
+                if(Math.random() > 0.75) { 
+                    reject(new Error('Gobnik'))
+                } else {
+                    resolve(this._data)
+                }
             }, 700)
         });
     }

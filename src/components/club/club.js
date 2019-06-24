@@ -3,22 +3,28 @@ import Dojo from '../dojo';
 import Spinner from '../spinner'
 import { connect } from 'react-redux';
 import { withDojoClubService } from '../hoc-helpers';
-import { clubLoaded } from '../../actions';
+import { clubLoaded, clubRequested, clubError } from '../../actions';
 import { compose } from '../../utils';
 import './club.css';
+import ErrorIndicator from '../error-indicator';
 
 class Club extends Component {
 
     componentDidMount() {
-        const { dojoClubService, clubLoaded } = this.props;
+        const { dojoClubService, clubLoaded, clubRequested, clubError } = this.props;
+        clubRequested();
         dojoClubService.getDojoClub()
-            .then((data) => clubLoaded(data.club));
+            .then((data) => clubLoaded(data.club))
+            .catch((err) => clubError(err));
     }
 
     render() {
-        const {dojos, loading } = this.props;
+        const {dojos, loading, error } = this.props;
         if(loading){
             return <Spinner />
+        }
+        if(error){
+            return <ErrorIndicator />
         }
         return(
             <ul className="club">
@@ -39,12 +45,15 @@ class Club extends Component {
 const mapStateToProps = (state) => {
     return { 
         dojos: state.club.dojos,
-        loading: state.loading
+        loading: state.loading,
+        error: state.error
      }
 }
 
 const mapDispatchToProps = {
-    clubLoaded
+    clubLoaded,
+    clubRequested,
+    clubError
 }
 
 // const mapDispatchToProps = (dispatch) => {
