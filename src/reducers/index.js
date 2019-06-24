@@ -8,20 +8,20 @@ const initialState = {
 
 const reducer = (state = initialState, action) => {
     switch(action.type) {
-        case 'CLUB_REQUESTED' :
+        case 'FETCH_CLUB_REQUEST' :
             return {
                 club: [],
                 loading: true,
                 error: null
             };
-        case 'CLUB_LOADED' :
+        case 'FETCH_CLUB_SUCCESS' :
             return {
                 club: action.payload,
                 loading: false,
                 error: null
             };
 
-        case 'CLUB_ERROR' :
+        case 'FETCH_CLUB_FAILURE' :
             return {
                 club: [],
                 loading: false,

@@ -1,25 +1,33 @@
+const clubRequested = () => {
+    return {
+        type: 'FETCH_CLUB_REQUEST'
+    }
+};
+
+
 const clubLoaded = (newClub) => {
     return {
-        type: 'CLUB_LOADED',
+        type: 'FETCH_CLUB_SUCCESS',
         payload: newClub
     }
 };
 
-const clubRequested = () => {
-    return {
-        type: 'CLUB_REQUESTED'
-    }
-};
+
 
 const clubError = (error) => {
     return {
-        type: 'CLUB_ERROR',
+        type: 'FETCH_CLUB_FAILURE',
         payload: error,
     };
 };
 
+const fetchClub = (dojoClubService, dispatch) => () => {
+    dispatch( clubRequested());
+    dojoClubService.getDojoClub()
+        .then((data) => dispatch(clubLoaded(data.club)))
+        .catch((err) => dispatch(clubError(err)));
+};
+
 export {
-    clubLoaded,
-    clubRequested,
-    clubError
+    fetchClub
 };
