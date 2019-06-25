@@ -8,7 +8,24 @@ import { compose } from '../../utils';
 import './club.css';
 import ErrorIndicator from '../error-indicator';
 
-class Club extends Component {
+
+const Club = ({dojos}) => {
+    return(
+        <ul className="club">
+            {
+                dojos.map( (dojo) => {
+                    return (
+                        <li key={dojo.id}>
+                            <Dojo dojo={dojo}/>
+                        </li>
+                    )
+                })
+            }
+        </ul>
+    );
+};
+
+class ClubContainer extends Component {
 
     componentDidMount() {
         this.props.fetchClub();
@@ -22,19 +39,8 @@ class Club extends Component {
         if(error){
             return <ErrorIndicator />
         }
-        return(
-            <ul className="club">
-                {
-                    dojos.map( (dojo) => {
-                        return (
-                            <li key={dojo.id}>
-                                <Dojo dojo={dojo}/>
-                            </li>
-                        )
-                    })
-                }
-            </ul>
-        )
+
+        return <Club dojos={dojos}/>
     }
 }
 
@@ -89,4 +95,4 @@ const mapDispatchToProps = (dispatch, ownProps) => {
 export default compose(
     withDojoClubService(),
     connect(mapStateToProps, mapDispatchToProps)
-)(Club);
+)(ClubContainer);
