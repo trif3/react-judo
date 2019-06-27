@@ -21,6 +21,13 @@ const clubError = (error) => {
     };
 };
 
+export const dojoAddedToCompare = (dojoId) => {
+    return {
+        type: 'DOJO_ADDED_TO_COMPARE',
+        payload: dojoId
+    }
+}
+
 const fetchClub = (dojoClubService, dispatch) => () => {
     dispatch( clubRequested());
     dojoClubService.getDojoClub()

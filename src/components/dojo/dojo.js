@@ -3,7 +3,7 @@ import { FaHome, FaMedal } from 'react-icons/fa';
 
 import './dojo.css'
 
-const Dojo = ( {dojo} ) => {
+const Dojo = ( {dojo, onAddedToCompare} ) => {
     const {id, name, details, brandImage, address } = dojo;
     var dojoIco = <FaHome />
     if(id%2 === 0){
@@ -19,7 +19,11 @@ const Dojo = ( {dojo} ) => {
                 <span className="dojo-name">{name}</span>
                 <div className="dojo-details">{details}</div>
                 <div className="dojo-address">{address}</div>
-                <button className="btn btn-info go-to-dojo">Go to Dojo</button>
+                <button
+                    onClick={onAddedToCompare} 
+                    className="btn btn-info go-to-dojo">
+                    Go to Dojo
+                </button>
             </div>
         </div>
     )
