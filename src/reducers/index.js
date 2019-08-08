@@ -33,21 +33,10 @@ const updateCompareItemOne = (dojo, item = {}) => {
         athletes: athletes + dojo.athletes.length,
         rate : rate + dojo.rate
     }
+}
 
-    // if (item) {
-    //     return {
-    //         ...item, 
-    //         athletes: item.athletes + dojo.athletes.length,
-    //         rate: item.rate + dojo.rate
-    //     }
-    // } else {
-    //     return {
-    //         id: dojo.id,
-    //         name: dojo.name,
-    //         athletes: dojo.athletes.length,
-    //         rate: dojo.rate
-    //     }
-    // }
+const updateCompare = (state) => {
+
 }
 
 const reducer = (state = initialState, action) => {
@@ -90,8 +79,12 @@ const reducer = (state = initialState, action) => {
                 compareItems: updateCompareItems(state.compareItems, newItem, itemIndex)
             }
 
-            default:
-                return state;
+        case 'DOJO_REMOVED_FROM_COMPARE' :
+
+        case 'ALL_DOJOS_REMOVED_FROM_COMPARE' :
+
+        default:
+            return state;
     }
 }
 

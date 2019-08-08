@@ -1,6 +1,11 @@
 import React from 'react';
-import './compare-dojo-table.css';
 import { connect } from 'react-redux';
+import { 
+    dojoAddedToCompare, 
+    dojoRemovedFromCompare, 
+    allDojosRemovedFromCompare } from '../../actions';
+import './compare-dojo-table.css';
+
 
 const CompareDojoTable = ({items, totalAthletes, onIncrease, onDecrease, onDelete}) => {
     const renderRow = (item, idx) => {
@@ -67,20 +72,10 @@ const mapStateToProps = ({compareItems, countAthletes}) => {
     }
 }
 
-const mapDispatchToProps = () => {
-    return {
-        onIncrease: (id) => {
-            console.log(`increase ${id}`)
-        },
-
-        onDecrease: (id) => {
-            console.log(`decrease ${id}`)
-        },
-
-        onDelete: (id => {
-            console.log(`delete ${id}`)
-        })
-    }
+const mapDispatchToProps = {
+    onIncrease: dojoAddedToCompare,
+    onDecrease: dojoRemovedFromCompare,
+    onDelete: allDojosRemovedFromCompare
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(CompareDojoTable);
