@@ -8,6 +8,7 @@ export default class VirtualDojoClubService {
                     details: "Dojo one is the main dojo",
                     brandImage: 'https://judosport.gr/static/media/logo.86fd73e8.svg',
                     address: "Thessaloniki, Ampelokipoi, Alexander the Great Stadium",
+                    rate: 5,
                     athletes: [
                         {
                             id: 1,
@@ -88,6 +89,7 @@ export default class VirtualDojoClubService {
                     details: "Dojo Second is the second dojo",
                     brandImage: 'https://judosport.gr/static/media/logo.86fd73e8.svg',
                     address: "Athens, Acropolis",
+                    rate:5,
                     athletes: [
                         {
                             id: 1,
@@ -167,6 +169,15 @@ export default class VirtualDojoClubService {
     }
 
     getDojoClub() {
-        return this._data
+        return new Promise((resolve, reject) => {
+            setTimeout(() => {
+                //Throw error 1/4 times. just for fun!
+                if(Math.random() > 0.75) { 
+                    reject(new Error('Gobnik'))
+                } else {
+                    resolve(this._data)
+                }
+            }, 700)
+        });
     }
 }
