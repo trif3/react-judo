@@ -1,0 +1,37 @@
+'Ctrl+Enter' // Triggers `Todo: Toggle Box`
+'Alt+Enter' // Triggers `Todo: Toggle Box`
+'Alt+D' // Triggers `Todo: Toggle Done`
+'Alt+C' // Triggers `Todo: Toggle Cancelled`
+'Alt+S' // Triggers `Todo: Toggle Start`
+'Ctrl+Shift+A' // Triggers  `Todo: Archive`
+
+Projects:
+  
+  Todos:
+    New:
+        ☐ Study the external links in index.html file. @O
+            Description: go to /public/index.html, from line 27 to 34 and research about <link> attributes! What do we need these lines of code?
+        ☐ Invetigate and create Button.js component @O
+            Description: create Button.js component in /src/components/GlobalComponents folder, refere to source github repository.
+        ☐ Invetigate and create Container.js component @O
+            Description: same here. Include a google search "react children components" in your research. 
+        ☐ Invetigate and create Icon.js component @O
+            Description: same here. In order to create this component you need to create "Image" folder and copy relevant "png image" (import LineIcon from "../Image/lines.png";)  
+        
+        
+
+    Done:
+        ✔ Initialize new react app @T
+            Description: create new branch and set up a react app.
+        ✔ Create todo file and describe tasks @T
+            Description: setup tasks.
+    Cancelled:
+      ✘ Create Trello accout.
+
+    Tagging:
+      ☐ You can add tags using the @ symbol, like this @tag
+      ☐ There are some special, customizable tags: @critical @high @low @today
+  
+  Archive:
+    ✔ You can archive finished todos here
+    ✔ Congratulations, you are now a Todo+ master!
