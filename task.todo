@@ -25,8 +25,14 @@ Projects:
             Description: create new branch and set up a react app.
         ✔ Create todo file and describe tasks @T
             Description: setup tasks.
+        ✔ Study the external links in index.html file. @O @done(22-01-12 17:25)
+            Description: the answer is located at the ingex.html file line 35-36
+        ✔ Invetigate and create Button.js component @O @done(22-01-12 18:00)
+            Description: created a simple Button component 'My Button'
+        ✔ Invetigate and create Container.js component @O @done(22-01-12 18:28)
+            
     Cancelled:
-      ✘ Create Trello accout.
+      ✘ Create Trello account.
 
     Tagging:
       ☐ You can add tags using the @ symbol, like this @tag

@@ -1,10 +1,13 @@
 import React from "react";
 import "./App.css";
+import Button from './components/GlobalComponents/Button';
 
 const App = () => (
   <div className="App">
-    ippon project   
+    <Button />  
   </div>
+  
 );
+
 
 export default App;
