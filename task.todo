@@ -17,7 +17,12 @@ Projects:
             Description: same here. Include a google search "react children components" in your research. 
         ☐ Invetigate and create Icon.js component @O
             Description: same here. In order to create this component you need to create "Image" folder and copy relevant "png image" (import LineIcon from "../Image/lines.png";)  
-        
+        ☐ Wrap up Sprint1 @T
+        ☐ Plan project Sprint2 @T
+        ☐ Investigate and create Link.js component @O
+            Description: create Link.js component in /src/components/Navbar/Link.js folder. Refere to source code. Also a quick google search "react routing" and "react link".
+        ☐ Investigate and create LinksContainer.js component @O
+            Description: create LinksContainer.js in /src/components/Navbar/LinksContainer.js folder. Here you can use "Link" and "Button" compoments from prvious tasks. 
         
 
     Done:
