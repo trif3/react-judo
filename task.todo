@@ -11,6 +11,8 @@ Projects:
     New:
         ☐ Wrap up Sprint1 @T
         ☐ Plan project Sprint2 @T
+        ☐ We need one more component for "Navigation-bar". Please create the Logo.js component. Follow the reference github repository. @O
+        ☐ Once you finish the Logo component, create the Nav.js component for the Navigation-bar @O
 
     Done:
         ✔ Initialize new react app @T
@@ -19,10 +21,10 @@ Projects:
             Description: setup tasks.
         ✔ Study the external links in index.html file. @O 
             Description: the answer is located at the ingex.html file line 35-36
-        ✔ Invetigate and create Button.js component @O 
+        ✔ Investigate and create Button.js component @O 
             Description: created a simple Button component 'My Button'
-        ✔ Invetigate and create Container.js component @O 
-        ✔ Invetigate and create Icon.js component @O 
+        ✔ Investigate and create Container.js component @O 
+        ✔ Investigate and create Icon.js component @O 
         ✔ Investigate and create Link.js component @O 
         ✔ Investigate and create LinksContainer.js component @O 
             
