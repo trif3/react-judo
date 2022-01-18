@@ -7,10 +7,10 @@ const LinksContainer = ({ hidden }) => {
   return (
     <div css={styles} className={(hidden ? "hidden" : "") + " linksContainer"}>
       <Link name="HOME" linkTo="#home" />
-      <Link name="ABOUT" linkTo="#trainers" />
-      <Link name="GALLERY" linkTo="#ourClasses" />
-      <Link name="TEACHERS" linkTo="#schedule" />
-      <Link name="ATHLETES" linkTo="#schedule" />
+      <Link name="ABOUT" linkTo="#about" />
+      <Link name="GALLERY" linkTo="#gallery" />
+      <Link name="TRAINERS" linkTo="#trainers" />
+      <Link name="ATHLETES" linkTo="#athletes" />
       <Link name="CONTACT" linkTo="#contact" />
       
       <Button text="SIGN UP" />

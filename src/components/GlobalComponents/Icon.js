@@ -9,23 +9,3 @@ const styles = css`
 `;
 
 export default Icon;
-
-
-
-
-
-
-
-
-
-// import React from 'react';
-
-// function Icon() {
-//     return (
-//         <div>
-//             < img src="Images/image1.jpg" alt="sport image" />
-//         </div>
-//     )
-// }
-
-// export default Icon;
