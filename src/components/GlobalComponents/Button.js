@@ -1,13 +1,13 @@
+/** @jsx jsx */
 import { jsx, css } from "@emotion/core";
-import React from 'react';
 
 const Button = ({ text }) => (
-    <a css={styles} href="#/" className="btn">
-      {text}
-    </a>
-  );
+  <a css={styles} href="#/" className="btn">
+    {text}
+  </a>
+);
 
-  const styles = css`
+const styles = css`
   text-decoration: none;
   display: inline-block;
   background: #ed563b;

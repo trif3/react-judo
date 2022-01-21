@@ -1,14 +1,14 @@
+/** @jsx jsx */
 import { jsx, css } from "@emotion/core";
-import React from "react";
 import Button from "../GlobalComponents/Button";
 
 const Info = () => (
   <div css={styles} className="info">
-    <p>IF THERE IS EFFORT, THERE IS ALWAYS ACCOMPLISHMENT</p>
+    <p>judosport.gr</p>
     <h1>
-      WELCOME TO OUR<span>CLUB</span>
+      ENJOY THE <span>GAME</span>
     </h1>
-    <Button text="JOIN US" />
+    <Button text="BECOME A MEMBER" />
   </div>
 );
 

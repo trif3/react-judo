@@ -1,9 +1,9 @@
+/** @jsx jsx */
 import { jsx, css } from "@emotion/core";
-import React from "react";
 
 const Logo = () => (
   <h2 css={styles}>
-    JUDO <span>CLUB</span>
+    judo<span>sport</span>.gr
   </h2>
 );
 

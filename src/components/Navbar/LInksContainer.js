@@ -1,5 +1,5 @@
+/** @jsx jsx */
 import { jsx, css } from "@emotion/core";
-import React from "react";
 import Link from "./Link";
 import Button from "../GlobalComponents/Button";
 
@@ -7,12 +7,10 @@ const LinksContainer = ({ hidden }) => {
   return (
     <div css={styles} className={(hidden ? "hidden" : "") + " linksContainer"}>
       <Link name="HOME" linkTo="#home" />
-      <Link name="ABOUT" linkTo="#about" />
-      <Link name="GALLERY" linkTo="#gallery" />
-      <Link name="TRAINERS" linkTo="#trainers" />
-      <Link name="ATHLETES" linkTo="#athletes" />
+      <Link name="ABOUT" linkTo="#trainers" />
+      <Link name="CLASSES" linkTo="#ourClasses" />
+      <Link name="SCHEDULES" linkTo="#schedule" />
       <Link name="CONTACT" linkTo="#contact" />
-      
       <Button text="SIGN UP" />
     </div>
   );
