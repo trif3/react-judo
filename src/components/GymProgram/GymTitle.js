@@ -1,21 +1,21 @@
 /** @jsx jsx */
 import { jsx, css } from "@emotion/core";
+import React from "react";
 
-const Logo = () => (
+const GymTitle = () => (
   <h2 css={styles}>
-    judo<span>sport</span>.gr
+    CHOOSE <span>PROGRAM</span>
   </h2>
 );
 
 const styles = css`
-  color: #fff;
-  font-size: 30px;
+  color: #232d39;
+  font-size: 26px;
   font-weight: 900;
   line-height: 1;
-  cursor: pointer;
   span {
-    color: #007BA7;
+    color: #ed563b;
   }
 `;
 
-export default Logo;
+export default GymTitle;

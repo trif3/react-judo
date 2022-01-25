@@ -16,7 +16,7 @@ const styles = css`
   transition: color 600ms ease-in-out;
   &:first-of-type,
   &:hover {
-    color: #ed563b;
+    color: #007BA7;
   }
   @media (max-width: 1000px) {
     padding: 14px 0;

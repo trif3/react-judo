@@ -4,11 +4,11 @@ import Button from "../GlobalComponents/Button";
 
 const Info = () => (
   <div css={styles} className="info">
-    <p>judosport.gr</p>
+    <p>IF THERE IS EFFORT, THERE IS ALWAYS ACCOMPLISHMENT</p>
     <h1>
-      ENJOY THE <span>GAME</span>
+      WELCOME TO<span>JUDO CLUB</span>
     </h1>
-    <Button text="BECOME A MEMBER" />
+    <Button text="JOIN US" />
   </div>
 );
 
@@ -29,12 +29,12 @@ const styles = css`
     letter-spacing: 1.2px;
   }
   h1 {
-    font-size: 90px;
+    font-size: 60px;
     line-height: 1;
     font-weight: 900;
     margin: 36px 0;
     span {
-      color: #ed563b;
+      color: #007BA7;
     }
   }
   .btn {

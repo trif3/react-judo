@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { jsx, css } from "@emotion/core";
-import VideoBg from "../Image/bgVideo.mp4";
+import VideoBg from "../Image/bgVideo1.mp4";
 
 const Video = () => (
   <video css={styles} autoPlay muted loop>
