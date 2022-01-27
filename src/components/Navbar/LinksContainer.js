@@ -1,24 +1,24 @@
 /** @jsx jsx */
 import { jsx, css } from "@emotion/core";
 import Link from "./Link";
-import ButtonSignUp from "../GlobalComponents/ButtonSignUp";
-
+import Button from "../GlobalComponents/Button";
 
 const LinksContainer = ({ hidden }) => {
   return (
     <div css={styles} className={(hidden ? "hidden" : "") + " linksContainer"}>
       <Link name="HOME" linkTo="#home" />
-      <Link name="ABOUT" linkTo="#about" />
+      <Link name="ABOUT" linkTo="#trainers" />
       <Link name="CLASSES" linkTo="#ourClasses" />
       <Link name="SCHEDULES" linkTo="#schedule" />
       <Link name="CONTACT" linkTo="#contact" />
-      <ButtonSignUp text="SIGN UP" />
+      <Button text="SIGN UP" />
     </div>
   );
 };
 
 const styles = css`
   width: 100%;
+  max-width: 620px;
   display: flex;
   align-items: center;
   justify-content: space-between;
