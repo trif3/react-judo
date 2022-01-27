@@ -1,11 +1,11 @@
 /** @jsx jsx */
 import { jsx, css } from "@emotion/core";
-import VideoBg from "../Image/bgVideo1.mp4";
+import VideoBg from "../Image/Dojo.jpg";
 
 const Video = () => (
-  <video css={styles} autoPlay muted loop>
-    <source src={VideoBg} type="video/mp4" />
-  </video>
+  <img css={styles} src={VideoBg} />
+    
+
 );
 
 const styles = css`
@@ -14,7 +14,7 @@ const styles = css`
   max-width: 100%;
   max-height: 100vh;
   object-fit: cover;
-  z-index: -1;
+  
 `;
 
 export default Video;

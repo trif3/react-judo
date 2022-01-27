@@ -14,7 +14,7 @@ const styles = css`
   font-weight: 900;
   line-height: 1;
   span {
-    color: #ed563b;
+    color: #007BA7;
   }
 `;
 

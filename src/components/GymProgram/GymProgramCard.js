@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx, css } from "@emotion/core";
 import React from "react";
-import DumbbellIcon from "../Image/dumbbell.png";
+import DumbbellIcon from "../Image/black-belt.png";
 
 const GymProgramCard = ({ title, desc }) => (
   <div css={styles} className="card">
@@ -22,6 +22,8 @@ const styles = css`
   margin: 30px 0;
   img {
     margin-right: 30px;
+    width: 14%;
+
   }
   .cardInfo {
     display: flex;
@@ -36,13 +38,13 @@ const styles = css`
       line-height: 1.7;
     }
     a {
-      color: #ed563b;
+      color: #007BA7;
       text-decoration: none;
       transition: color 600ms ease-in-out;
       font-size: 14px;
       font-weight: 500;
       &:hover {
-        color: #f9735b;
+        color: #6699E0;
       }
     }
   }
