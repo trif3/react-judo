@@ -1,7 +1,8 @@
 /** @jsx jsx */
 import { jsx, css } from "@emotion/core";
 import Link from "./Link";
-import Button from "../GlobalComponents/Button";
+import ButtonSignUp from "../GlobalComponents/ButtonSignUp";
+
 
 const LinksContainer = ({ hidden }) => {
   return (
@@ -11,14 +12,13 @@ const LinksContainer = ({ hidden }) => {
       <Link name="CLASSES" linkTo="#ourClasses" />
       <Link name="SCHEDULES" linkTo="#schedule" />
       <Link name="CONTACT" linkTo="#contact" />
-      <Button text="SIGN UP" />
+      <ButtonSignUp text="SIGN UP" />
     </div>
   );
 };
 
 const styles = css`
   width: 100%;
-  max-width: 620px;
   display: flex;
   align-items: center;
   justify-content: space-between;

@@ -14,9 +14,8 @@ const styles = css`
   font-weight: 400;
   color: #fff;
   transition: color 600ms ease-in-out;
-  &:first-of-type,
   &:hover {
-    color: #3295B8;
+    color: #f7373a;
   }
   @media (max-width: 1000px) {
     padding: 14px 0;

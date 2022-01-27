@@ -7,13 +7,14 @@ import GymOverlayBg from "../Image/Judo_MM2.jpg";
 const Member = ({ text }) => (
   <section css={styles} className="member">
     <h2>
-      DON’T <span>THINK</span>, BEGIN <span>TODAY</span>!
+      DON’T THINK, BEGIN TODAY
     </h2>
     <p>
     We offer regular training sessions for all judoka aged 6 years old onwards. <br />
     We have a mix of international competitors to beginners all sharing the dojo at the same time, <br />
     so no matter what your goal is, we will help you achieve it.
     </p>
+    < br/>
     <Button text="JOIN US" />
   </section>
 );
@@ -29,9 +30,8 @@ const styles = css`
     font-size: 36px;
     letter-spacing: 1.3px;
     line-height: 1;
-    span {
-      color: #007BA7;
-    }
+    text-decoration: underline
+    
   }
   p {
     color: #fff;

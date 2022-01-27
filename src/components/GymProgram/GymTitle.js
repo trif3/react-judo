@@ -4,7 +4,7 @@ import React from "react";
 
 const GymTitle = () => (
   <h2 css={styles}>
-    CHOOSE <span>PROGRAM</span>
+    CHOOSE PROGRAM
   </h2>
 );
 
@@ -14,7 +14,7 @@ const styles = css`
   font-weight: 900;
   line-height: 1;
   span {
-    color: #007BA7;
+    color: black;
   }
 `;
 

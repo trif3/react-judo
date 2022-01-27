@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx, css } from "@emotion/core";
 
-const Button = ({ text }) => (
+const ButtonSignUp = ({ text }) => (
   <a css={styles} href="#/" className="btn">
     {text}
   </a>
@@ -10,8 +10,7 @@ const Button = ({ text }) => (
 const styles = css`
   text-decoration: none;
   display: inline-block;
-  border: 2px solid #f7373a;
-  color: #fff;
+  color: #bcbcbc;
   font-size: 14px;
   padding: 12px 14px;
   transition: color 500ms ease-in-out;
@@ -20,4 +19,4 @@ const styles = css`
   }
 `;
 
-export default Button;
+export default ButtonSignUp;

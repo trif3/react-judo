@@ -6,7 +6,7 @@ const Info = () => (
   <div css={styles} className="info">
     <p>IF THERE IS EFFORT, THERE IS ALWAYS ACCOMPLISHMENT</p>
     <h1>
-      WELCOME TO<span>JUDO CLUB</span>
+      WELCOME TO JUDO CLUB
     </h1>
     <Button text="JOIN US" />
   </div>
@@ -29,7 +29,9 @@ const styles = css`
     letter-spacing: 1.2px;
   }
   h1 {
-    font-size: 60px;
+    font-size: 100px;
+    letter-spacing: 5px;
+    font-family: 'Teko', sans-serif;
     line-height: 1;
     font-weight: 900;
     margin: 36px 0;

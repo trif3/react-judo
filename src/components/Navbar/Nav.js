@@ -11,7 +11,7 @@ const Nav = () => {
   return (
     <nav css={styles}>
       <Container>
-        <Logo />
+        
         <i
           onClick={() => setHidden(!hidden)}
           className={hidden ? "fas fa-bars fa-lg" : "fas fa-times fa-lg"}
@@ -27,8 +27,8 @@ const styles = css`
   width: 100%;
   position: absolute;
   top: 0;
-  padding: 20px 0;
-  background: rgba(250, 250, 250, 0.1);
+  padding: 10px 0;
+  background: rgba(35, 45, 57, 0.1);
   z-index: 20;
   .container {
     display: flex;

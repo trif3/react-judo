@@ -37,7 +37,7 @@ const styles = css`
   width: 100%;
   min-height: 100vh;
   text-align: center;
-  padding: 120px 0;
+  padding: 100px 0;
   .container {
     display: flex;
     flex-wrap: wrap;

@@ -5,7 +5,7 @@ import DumbbellIcon from "../Image/black-belt.png";
 
 const GymProgramCard = ({ title, desc }) => (
   <div css={styles} className="card">
-    <img src={DumbbellIcon} alt="dumbbell" />
+    
     <div className="cardInfo">
       <h4>{title}</h4>
       <p>{desc}</p>
@@ -20,12 +20,11 @@ const styles = css`
   display: flex;
   text-align: left;
   margin: 30px 0;
-  img {
-    margin-right: 30px;
-    width: 14%;
-
-  }
+  border: 2px;
+  
   .cardInfo {
+    border: 1px solid black;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -38,7 +37,7 @@ const styles = css`
       line-height: 1.7;
     }
     a {
-      color: #007BA7;
+      color: #444444;
       text-decoration: none;
       transition: color 600ms ease-in-out;
       font-size: 14px;
