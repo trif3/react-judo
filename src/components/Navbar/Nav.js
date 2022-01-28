@@ -17,7 +17,7 @@ const Nav = () => {
           className={hidden ? "fas fa-bars fa-lg" : "fas fa-times fa-lg"}
           id="burgerMenu"
         ></i>
-        <LInksContainer hidden={hidden} />
+        <LinksContainer hidden={hidden} />
       </Container>
     </nav>
   );
