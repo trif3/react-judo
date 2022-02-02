@@ -9,6 +9,7 @@ const Info = () => (
       WELCOME TO JUDO CLUB
     </h1>
     <Button text="JOIN US" />
+    
   </div>
 );
 

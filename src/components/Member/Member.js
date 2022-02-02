@@ -30,7 +30,7 @@ const styles = css`
     font-size: 36px;
     letter-spacing: 1.3px;
     line-height: 1;
-    text-decoration: underline solid #f7373a;
+    text-decoration: underline ;
     
   }
   p {

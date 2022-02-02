@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx, css } from "@emotion/core";
 import React from "react";
-import DumbbellIcon from "../Image/black-belt.png";
+
 
 const GymProgramCard = ({ title, desc }) => (
   <div css={styles} className="card">

@@ -12,7 +12,7 @@ const Classes = ({ text }) => {
   return (
     <section css={styles} className="ourClasses" id="ourClasses">
       <h2>
-        OUR <span>CLASSES</span>
+        OUR CLASSES
       </h2>
       <Icon />
       <p>
