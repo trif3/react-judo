@@ -39,7 +39,7 @@ const styles = css`
     outline: none;
     cursor: pointer;
     &.active {
-      color: #ed563b;
+      color: #f7373a;
     }
   }
   span {

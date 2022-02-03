@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx, css } from "@emotion/core";
 import Nav from "../Navbar/Nav";
-import Video from "./Video";
+import Image from "./ImageBg";
 import Overlay from "./Overlay";
 import Info from "./Info";
 
@@ -10,7 +10,7 @@ const Main = () => (
     <Overlay />
     <Nav />
     <Info />
-    <Video />
+    <Image />
   </section>
 );
 

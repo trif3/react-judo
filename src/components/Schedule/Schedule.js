@@ -2,7 +2,7 @@
 import { jsx, css } from "@emotion/core";
 import React, { useState } from "react";
 import Icon from "../GlobalComponents/Icon";
-import scheduleBg from "../Image/scheduleBg.jpg";
+import scheduleBg from "../Image/scheduleBg.jpeg";
 import ScheduleLinks from "./ScheduleLinks";
 import Table from "./Table";
 import Container from "../GlobalComponents/Container";
@@ -14,7 +14,7 @@ const Schedule = () => {
   return (
     <section css={styles} className="schedule" id="schedule">
       <h2>
-        CLASSES <span>SCHEDULE</span>
+      <span>CLASSES SCHEDULE</span>
       </h2>
       <Icon />
       <p>
@@ -35,15 +35,17 @@ const styles = css`
   padding: 120px 0;
   min-height: 100vh;
   text-align: center;
-  background: url('${scheduleBg}') no-repeat center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('${scheduleBg}') no-repeat center/cover ;
+
   h2 {
     color: #fff;
-    font-weight: 900;
-    font-size: 36px;
+    font-weight: 300;
+    font-size: 34px;
     letter-spacing: 1.3px;
     line-height: 1;
     span {
-      color: #ed563b;
+      font-family: 'Rajdhahi', sans-serif;
+      color: #f7373a;
     }
   }
   p {

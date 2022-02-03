@@ -42,10 +42,11 @@ const styles = css`
   button {
     width: 100%;
     padding: 28px 28px;
-    color: #232d39;
+    background-color: #191919;
+    color: #fff;
     font-weight: 500;
     text-align: center;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    
     display: flex;
     align-items: center;
     margin-bottom: 36px;
@@ -53,7 +54,14 @@ const styles = css`
     outline: none;
     font-size: 20px;
     &.active {
-      color: #f7373a;
+      color: #FF4141;
+      
+    }
+    &:hover{
+      transition: all 0.4s ease 0s;
+      background-color: #000000;
+      transform:scale(1.02,1.02);
+    
     }
   }
   .btn {

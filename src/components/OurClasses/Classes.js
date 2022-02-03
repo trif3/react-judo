@@ -12,7 +12,7 @@ const Classes = ({ text }) => {
   return (
     <section css={styles} className="ourClasses" id="ourClasses">
       <h2>
-        OUR CLASSES
+       <span>OUR CLASSES</span> 
       </h2>
       <Icon />
       <p>
@@ -34,11 +34,12 @@ const styles = css`
   text-align: center;
   h2 {
     color: #232d39;
-    font-size: 26px;
-    font-weight: 900;
+    font-weight: 300;
+    font-size: 34px;
+    letter-spacing: 1.3px;
     line-height: 1;
     span {
-      color: #ed563b;
+      font-family: 'Rajdhahi', sans-serif;
     }
   }
   p {

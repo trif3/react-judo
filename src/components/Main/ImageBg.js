@@ -1,9 +1,9 @@
 /** @jsx jsx */
 import { jsx, css } from "@emotion/core";
-import VideoBg from "../Image/Dojo.jpg";
+import ImageBg from "../Image/Dojo.jpg";
 
-const Video = () => (
-  <img css={styles} src={VideoBg} />
+const Image = () => (
+  <img css={styles} src={ImageBg} />
     
 
 );
@@ -17,4 +17,4 @@ const styles = css`
   
 `;
 
-export default Video;
+export default Image;
