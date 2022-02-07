@@ -19,8 +19,7 @@ const LinksContainer = ({ hidden }) => {
 const styles = css`
   width: 100%;
   display: flex;
-   
-  float: right;
+  max-width: 620px;
   align-items: center;
   justify-content: space-between;
  
@@ -31,9 +30,9 @@ const styles = css`
     align-items: flex-start;
     opacity: 1;
     position: absolute;
-    left: 20px;
+    left: 0;
     top: 70px;
-    background: rgba(35, 45, 57, 0.8);
+    background: rgba(255, 255, 255, );
     transition: top 1100ms ease-in-out, opacity 1100ms ease-in-out;
     &.hidden {
       left: 0;

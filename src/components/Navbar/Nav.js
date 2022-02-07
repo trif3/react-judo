@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx, css } from "@emotion/core";
 import { useState } from "react";
-import Logo from "../GlobalComponents/Logo";
+import Logo from "./Logo";
 import LinksContainer from "./LinksContainer";
 import Container from "../GlobalComponents/Container";
 
@@ -10,9 +10,8 @@ const Nav = () => {
 
   return (
     <nav css={styles}>
-      <Logo />
       <Container>
-        
+        <Logo />
         <i
           onClick={() => setHidden(!hidden)}
           className={hidden ? "fas fa-bars fa-lg" : "fas fa-times fa-lg"}
@@ -29,13 +28,13 @@ const styles = css`
   position: absolute;
   top: 0;
   padding: 10px 0;
-  background: rgba(35, 45, 57, 0.1);
+  background: rgba(255, 255, 255, 0.06);
   z-index: 20;
   .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    float: right;
+    
     #burgerMenu {
       color: #fff;
       cursor: pointer;

@@ -1,9 +1,11 @@
 /** @jsx jsx */
 import { jsx, css } from "@emotion/core";
 import Button from "../GlobalComponents/Button";
+import Logo from "../GlobalComponents/Logo"
 
 const Info = () => (
   <div css={styles} className="info">
+    <Logo />
     <p>IF THERE IS EFFORT, THERE IS ALWAYS ACCOMPLISHMENT</p>
     <h1>
       WELCOME TO JUDO CLUB
