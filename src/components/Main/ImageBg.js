@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { jsx, css } from "@emotion/core";
-import ImageBg from "../Image/Dojo.jpg";
+import ImageBg from "../Image/blackbeltBg.jpg";
 
 const Image = () => (
   <img css={styles} src={ImageBg} />

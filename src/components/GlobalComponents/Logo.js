@@ -6,7 +6,8 @@ import LineIcon from "../Image/logo.png";
 const Logo = () => <img css={styles} src={LineIcon} />;
 
 const styles = css`
-  margin: 20px 0;
+  width: 4%;
+  margin-left: 40px;
 `;
 
 export default Logo;

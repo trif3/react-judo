@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx, css } from "@emotion/core";
 import { useState } from "react";
-import Logo from "./Logo";
+import Logo from "../GlobalComponents/Logo";
 import LinksContainer from "./LinksContainer";
 import Container from "../GlobalComponents/Container";
 
@@ -10,6 +10,7 @@ const Nav = () => {
 
   return (
     <nav css={styles}>
+      <Logo />
       <Container>
         
         <i
@@ -34,6 +35,7 @@ const styles = css`
     display: flex;
     align-items: center;
     justify-content: space-between;
+    float: right;
     #burgerMenu {
       color: #fff;
       cursor: pointer;

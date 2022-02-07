@@ -58,7 +58,7 @@ const styles = css`
       
     }
     &:hover{
-      transition: all 0.4s ease 0s;
+      transition: ease-in 0.2s ;
       background-color: #000000;
       transform:scale(1.02,1.02);
     

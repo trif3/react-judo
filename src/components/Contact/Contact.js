@@ -24,6 +24,7 @@ const Contact = () => (
 
 const styles = css`
   width: 100%;
+  
   .container {
     max-width: 100%;
     display: flex;
