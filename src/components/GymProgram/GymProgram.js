@@ -43,7 +43,7 @@ const styles = css`
   text-align: center;
   padding: 100px 0;
   .container {
-    display: flex;
+    display: block;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 40px 0;
