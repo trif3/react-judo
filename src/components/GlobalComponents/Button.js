@@ -17,6 +17,7 @@ const styles = css`
   transition: color 500ms ease-in-out;
   &:hover {
     color: #f7373a;
+    
   }
 `;
 

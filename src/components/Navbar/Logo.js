@@ -3,7 +3,7 @@ import { jsx, css } from "@emotion/core";
 
 const Logo = () => (
   <h2 css={styles}>
-    KLEIDARXOS
+    KLEIDARHOS
   </h2>
 );
 

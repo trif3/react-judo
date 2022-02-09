@@ -14,20 +14,24 @@ const GymProgram = () => (
     <GymSubtitle />
     <Container>
       <GymProgramCard
-        title="Basic Fitness"
-        desc="Please do not re-distribute this template ZIP file on any template collection website. This is not allowed."
+        title="Judo"
+        desc="Judo develops self-discipline and respect for oneself and others. 
+        It provides the means for learning self-confidence, concentration, 
+        and leadership skills, as well as physical coordination, power, and flexibility"
       />
       <GymProgramCard
-        title="Advanced Muscle Course"
-        desc="You may want to browse through Digital Marketing or Corporate HTML CSS templates on our website."
+        title="Jiu Jitsu"
+        desc="Jiu Jitsu is a grappling/wrestling based discipline and 
+        it promotes the principle that a smaller, weaker person using 
+        leverage and proper technique can successfully defend themselves 
+        against a bigger, stronger assailant."
       />
       <GymProgramCard
-        title="New Gym Training"
-        desc="If you wish to support TemplateMo website via PayPal, please feel free to contact us. We appreciate it a lot."
-      />
-      <GymProgramCard
-        title="Yoga Training"
-        desc="This template is built on Bootstrap v4.3.1 framework. It is easy to adapt the columns and sections."
+        title="Pancratium"
+        desc="It's a combination of wrestling and boxing.
+        The trainee in the pancratium learns basic techniques of 
+        self-defense while at the same time the culture 
+        and the moral principles of ancient Greece"
       />
     </Container>
   </div>

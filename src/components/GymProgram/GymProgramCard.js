@@ -19,11 +19,12 @@ const styles = css`
   max-width: 47%;
   display: flex;
   text-align: left;
-  margin: 30px 0;
+  margin: 20px 0;
   border: 2px;
   
+  
   .cardInfo {
-    border: 1px solid black;
+    border: 3px solid black;
     padding: 10px;
     display: flex;
     flex-direction: column;
