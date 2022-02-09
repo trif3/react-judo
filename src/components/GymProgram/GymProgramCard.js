@@ -1,18 +1,26 @@
 /** @jsx jsx */
 import { jsx, css } from "@emotion/core";
-import React from "react";
+import React, { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css"
 
 
-const GymProgramCard = ({ title, desc }) => (
-  <div css={styles} className="card">
+const GymProgramCard = ({ title, desc }) => {
+  useEffect(() => {
+    Aos.init({ duration: 2000});
+  }, []
+
+  )
+return(
+  <div css={styles} className="card" data-aos="fade-up">
     
     <div className="cardInfo">
       <h4>{title}</h4>
       <p>{desc}</p>
       <a href="#/">DISCOVER MORE</a>
     </div>
-  </div>
-);
+  </div>);
+};
 
 const styles = css`
   width: 100%;
@@ -21,19 +29,20 @@ const styles = css`
   text-align: left;
   margin: 20px 0;
   border: 2px;
-  
+
   
   .cardInfo {
     border: 3px solid black;
     padding: 10px;
     display: flex;
     flex-direction: column;
+    background-color: black;
     justify-content: space-between;
     h4 {
-      color: #232d39;
+      color: #fff;
     }
     p {
-      color: #7a7a7a;
+      color: #fff;
       font-size: 14px;
       line-height: 1.7;
     }
