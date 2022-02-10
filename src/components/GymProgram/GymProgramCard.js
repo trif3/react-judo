@@ -2,7 +2,7 @@
 import { jsx, css } from "@emotion/core";
 import React, { useEffect } from "react";
 import Aos from "aos";
-import "aos/dist/aos.css"
+import "aos/dist/aos.css";
 
 
 const GymProgramCard = ({ title, desc }) => {
@@ -39,7 +39,7 @@ const styles = css`
     background-color: black;
     justify-content: space-between;
     h4 {
-      color: #fff;
+      color: #f7373a;
     }
     p {
       color: #fff;
