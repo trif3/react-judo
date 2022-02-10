@@ -18,7 +18,7 @@ const Classes = ({ text }) => {
 
   return (
     <section css={styles} className="ourClasses" id="ourClasses">
-      <h2 data-aos="fade">
+      <h2 >
        OUR CLASSES 
       </h2>
       <Icon />
@@ -40,10 +40,9 @@ const styles = css`
   text-align: center;
   h2 {
     color: #232d39;
-    font-weight: 300;
-    font-size: 34px;
-    letter-spacing: 1.3px;
-    line-height: 1;
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 1;
     
   }
   p {

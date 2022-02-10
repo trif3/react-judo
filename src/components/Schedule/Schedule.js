@@ -38,15 +38,11 @@ const styles = css`
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('${scheduleBg}') no-repeat center/cover ;
 
   h2 {
-    color: #fff;
-    font-weight: 300;
-    font-size: 34px;
-    letter-spacing: 1.3px;
-    line-height: 1;
-    span {
-      font-family: 'Rajdhahi', sans-serif;
-      color: #f7373a;
-    }
+    color: #f7373a;
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 1;
+  
   }
   p {
     color: #fff;

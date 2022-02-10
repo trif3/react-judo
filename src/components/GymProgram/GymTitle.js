@@ -10,12 +10,9 @@ const GymTitle = () => (
 
 const styles = css`
   color: #232d39;
-  font-size: 26px;
+  font-size: 40px;
   font-weight: 900;
   line-height: 1;
-  span {
-    color: black;
-  }
 `;
 
 export default GymTitle;
