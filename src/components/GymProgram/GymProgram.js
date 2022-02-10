@@ -47,6 +47,7 @@ const styles = css`
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 40px 0;
+    align-items: center;
   }
   @media (max-width: 700px) {
     .container {

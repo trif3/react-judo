@@ -12,7 +12,7 @@ const Classes = ({ text }) => {
   return (
     <section css={styles} className="ourClasses" id="ourClasses">
       <h2>
-       <span>OUR CLASSES</span> 
+       OUR CLASSES 
       </h2>
       <Icon />
       <p>
@@ -38,9 +38,7 @@ const styles = css`
     font-size: 34px;
     letter-spacing: 1.3px;
     line-height: 1;
-    span {
-      font-family: 'Rajdhahi', sans-serif;
-    }
+    
   }
   p {
     color: #7a7a7a;
