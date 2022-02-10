@@ -9,25 +9,25 @@ const LinksContainer = ({ setTraining, training }) => (
       className={training === "FirstClass" ? "active" : ""}
       onClick={() => setTraining("FirstClass")}
     >
-       First Training Class
+       Junior (7-15 years old)
     </button>
     <button
       className={training === "SecondClass" ? "active" : ""}
       onClick={() => setTraining("SecondClass")}
     >
-       Second Training Class
+       Senior (16+ years old)
     </button>
     <button
       className={training === "ThirdClass" ? "active" : ""}
       onClick={() => setTraining("ThirdClass")}
     >
-       Third Training Class
+       Intermediate Classes
     </button>
     <button
       className={training === "FourthClass" ? "active" : ""}
       onClick={() => setTraining("FourthClass")}
     >
-       Fourth Training Class
+       Advanced Classes
     </button>
     <Button text="View All Schedules" />
   </div>

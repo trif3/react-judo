@@ -14,7 +14,7 @@ const Schedule = () => {
   return (
     <section css={styles} className="schedule" id="schedule">
       <h2>
-      <span>CLASSES SCHEDULE</span>
+      CLASSES SCHEDULE
       </h2>
       <Icon />
       <p>

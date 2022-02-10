@@ -11,31 +11,43 @@ const Results = ({ training }) => (
   <div css={styles} className="results">
     {training === "FirstClass" && (
       <Output
-        title="First Training Class"
-        info="Phasellus convallis mauris sed elementum vulputate. Donec posuere leo sed dui eleifend hendrerit. Sed suscipit suscipit erat, sed vehicula ligula. Aliquam ut sem fermentum sem tincidunt lacinia gravida aliquam nunc. Morbi quis erat imperdiet, molestie nunc ut, accumsan diam."
+        title="Junior "
+        info="At Kleidarhos Judo Club we take children on from the age of 7 years old.
+         Judo gives kids a confidence in their physical health and ability, it teaches them to 
+         respect themselves and others for in judo without a partner there is no practice. 
+         Most of all learning judo is FUN and challenging and often can lead to a sport for life."
         img={ClassOneBg}
       />
     )}
 
     {training === "SecondClass" && (
       <Output
-        title="Second Training Class"
-        info="Integer dapibus, est vel dapibus mattis, sem mauris luctus leo, ac pulvinar quam tortor a velit. Praesent ultrices erat ante, in ultricies augue ultricies faucibus. Nam tellus nibh, ullamcorper at mattis non, rhoncus sed massa. Cras quis pulvinar eros. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+        title="Senior"
+        info="The senior classes at Kleidarhos judo Club are for anyone aged 16 or older. 
+        Whatever your level you are welcome on our senior mat. The normal format for every 
+        session is a warm-up with stretching, standing or ground work technique 
+        and some free practice which is an opportunity for participants to test their skills."
         img={ClassTwoBg}
       />
     )}
     {training === "ThirdClass" && (
       <Output
-        title="Third Training Class"
-        info="Fusce laoreet malesuada rhoncus. Donec ultricies diam tortor, id auctor neque posuere sit amet. Aliquam pharetra, augue vel cursus porta, nisi tortor vulputate sapien, id scelerisque felis magna id felis. Proin neque metus, pellentesque pharetra semper vel, accumsan a neque."
+        title="Intermediate"
+        info="Our intermediate classes are tailored for those juniors who have completed beginners 
+        courses and are looking to continue their judo training. This level links beginners up to 
+        the age of 12 to the advanced junior class. The emphasis in these classes is fun and 
+        technical development.  The classes are age specific and will develop your child’s 
+        judo as they grow older."
         img={ClassThreeBg}
       />
     )}
 
     {training === "FourthClass" && (
       <Output
-        title="Fourth Training Class"
-        info="Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean ultrices elementum odio ac tempus. Etiam eleifend orci lectus, eget venenatis ipsum commodo et."
+        title="Advanced"
+        info="The Advanced Class is aimed at athletes of all ages who want to be challenged. 
+        Some of the training group regularly attend competitions and camps around 
+        the country (and Europe). "
         img={ClassFourBg}
       />
     )}

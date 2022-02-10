@@ -16,9 +16,8 @@ const Classes = ({ text }) => {
       </h2>
       <Icon />
       <p>
-        Nunc urna sem, laoreet ut metus id, aliquet consequat magna. Sed viverra
-        <br />
-        ipsum dolor, ultricies fermentum massa consequat eu.
+      The Kleidarhos offers a comprehensive timetable of Judo classes for kids, teens and adults.<br />
+      We regularly run Adult Beginners Courses, as well  as classes for  Junior Beginners, Intermediate Judo and Advanced Judo
       </p>
       <Container>
         <LinksContainer setTraining={setTraining} training={training} />
