@@ -6,7 +6,7 @@ import Logo from "../GlobalComponents/Logo"
 const Info = () => (
   <div css={styles} className="info">
     <Logo />
-    <p>IF THERE IS EFFORT, THERE IS ALWAYS ACCOMPLISHMENT</p>
+    <p>OVER 20 YEARS OF EXCELLENCE</p>
     <h1>
       WELCOME TO JUDO CLUB
     </h1>

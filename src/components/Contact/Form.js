@@ -2,7 +2,7 @@
 import { jsx, css } from "@emotion/core";
 import React from "react";
 import Button from "../GlobalComponents/Button";
-import ContactBg from "../Image/contactBg.jpg";
+import ContactBg from "../Image/contactsbg.jpg";
 
 const Form = ({ text }) => (
   <div css={styles} className="formContainer">
@@ -22,6 +22,7 @@ const styles = css`
   min-height: 60vh;
   display: flex;
   background: url('${ContactBg}') no-repeat center/cover;
+ 
   form {
     margin: auto;
     display: flex;

@@ -10,7 +10,7 @@ const Member = ({ text }) => (
       DON’T THINK, BEGIN TODAY
     </h2>
     <p>
-    We offer regular training sessions for all judoka aged 6 years old onwards. <br />
+    We offer regular training sessions for all judoka aged 7 years old onwards. <br />
     We have a mix of international competitors to beginners all sharing the dojo at the same time, <br />
     so no matter what your goal is, we will help you achieve it.
     </p>

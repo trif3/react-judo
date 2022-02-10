@@ -1,23 +1,31 @@
 /** @jsx jsx */
 import { jsx, css } from "@emotion/core";
-import React from "react";
+import React, {useEffect} from "react";
 import Button from "../GlobalComponents/Button";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
-const LinksContainer = ({ setTraining, training }) => (
-  <div css={styles} className="linksContainer">
-    <button
+const LinksContainer = ({ setTraining, training }) => {
+  useEffect(() => {
+    Aos.init({ duration: 2000});
+  }, []
+
+  )
+  return (
+  <div css={styles} className="linksContainer" data-aos="fade-up-right" data-aos-once="false" data-aos-mirror="true">
+    <button 
       className={training === "FirstClass" ? "active" : ""}
       onClick={() => setTraining("FirstClass")}
     >
        Junior (7-15 years old)
     </button>
-    <button
+    <button 
       className={training === "SecondClass" ? "active" : ""}
       onClick={() => setTraining("SecondClass")}
     >
        Senior (16+ years old)
     </button>
-    <button
+    <button 
       className={training === "ThirdClass" ? "active" : ""}
       onClick={() => setTraining("ThirdClass")}
     >
@@ -30,8 +38,8 @@ const LinksContainer = ({ setTraining, training }) => (
        Advanced Classes
     </button>
     <Button text="View All Schedules" />
-  </div>
-);
+  </div>)
+};
 
 const styles = css`
   width: 100%;

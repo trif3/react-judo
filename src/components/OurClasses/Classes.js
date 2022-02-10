@@ -1,6 +1,9 @@
 /** @jsx jsx */
 import { jsx, css } from "@emotion/core";
 import React, { useState } from "react";
+import { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import Icon from "../GlobalComponents/Icon";
 import LinksContainer from "./LinksContainer";
 import Results from "./Results";
@@ -8,10 +11,14 @@ import Container from "../GlobalComponents/Container";
 
 const Classes = ({ text }) => {
   const [training, setTraining] = useState("FirstClass");
+  useEffect(() => {
+    Aos.init({ duration: 2000});
+  }, []
+  )
 
   return (
     <section css={styles} className="ourClasses" id="ourClasses">
-      <h2>
+      <h2 data-aos="fade">
        OUR CLASSES 
       </h2>
       <Icon />

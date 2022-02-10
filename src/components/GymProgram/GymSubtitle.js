@@ -4,9 +4,8 @@ import React from "react";
 
 const GymSubtitle = () => (
   <p css={styles}>
-    Training Studio is free CSS template for gyms and fitness centers. You are{" "}
-    <br />
-    allowed to use this layout for your business website.
+    Kleitomahos judo club offers programmes for everyone <br />
+    from children through seniors to elite athletes competing at international level.
   </p>
 );
 
