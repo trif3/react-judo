@@ -6,7 +6,9 @@ import LineIcon from "../Image/substract.png";
 const Icon = () => <img css={styles} src={LineIcon} />;
 
 const styles = css`
-  width: 5%;
+  width: 10%;
+  margin-top: -40px;
+  margin-bottom: -30px;
 `;
 
 export default Icon;

@@ -13,6 +13,7 @@ const styles = css`
   font-size: 40px;
   font-weight: 900;
   line-height: 1;
+  margin-top: -30px;
 `;
 
 export default GymTitle;

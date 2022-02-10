@@ -43,7 +43,7 @@ const styles = css`
   font-size: 40px;
   font-weight: 900;
   line-height: 1;
-    
+ margin-top: -20px;
   }
   p {
     color: #7a7a7a;
