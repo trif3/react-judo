@@ -17,7 +17,7 @@ return(
     <div className="cardInfo">
       <h4>{title}</h4>
       <p>{desc}</p>
-      <a href="#/">DISCOVER MORE</a>
+      {/* <a href="#/">DISCOVER MORE</a> */}
     </div>
   </div>);
 };
@@ -32,18 +32,19 @@ const styles = css`
 
   
   .cardInfo {
-    border: 3px solid black;
+   
     padding: 10px;
     display: flex;
     flex-direction: column;
-    background-color: black;
     justify-content: space-between;
+    background-color: rgb(240, 240, 240) ;
+
     h4 {
       color: #f7373a;
     }
     p {
-      color: #fff;
-      font-size: 14px;
+      color: #00000;
+      font-size: 16px;
       line-height: 1.7;
     }
     a {

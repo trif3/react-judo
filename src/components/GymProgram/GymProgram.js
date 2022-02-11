@@ -14,20 +14,20 @@ const GymProgram = () => (
     <GymSubtitle />
     <Container>
       <GymProgramCard
-        title="Judo"
+        title="JUDO"
         desc="Judo develops self-discipline and respect for oneself and others. 
         It provides the means for learning self-confidence, concentration, 
         and leadership skills, as well as physical coordination, power, and flexibility"
       />
       <GymProgramCard
-        title="Jiu Jitsu"
+        title="JIU JITSU"
         desc="Jiu Jitsu is a grappling/wrestling based discipline and 
         it promotes the principle that a smaller, weaker person using 
         leverage and proper technique can successfully defend themselves 
         against a bigger, stronger assailant."
       />
       <GymProgramCard
-        title="Pancratium"
+        title="PANCRATIUM"
         desc="It's a combination of wrestling and boxing.
         The trainee in the pancratium learns basic techniques of 
         self-defense while at the same time the culture 
@@ -46,8 +46,6 @@ const styles = css`
     display: block;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 40px 0;
-    align-items: center;
   }
   @media (max-width: 700px) {
     .container {
