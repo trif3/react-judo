@@ -3,7 +3,7 @@ import { jsx, css } from "@emotion/core";
 import React from "react";
 import LineIcon from "../Image/substract.png";
 
-const Icon = () => <img css={styles} src={LineIcon} />;
+const Icon = () => <img css={styles} src={LineIcon} className="icon"/>;
 
 const styles = css`
   width: 10%;

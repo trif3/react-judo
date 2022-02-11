@@ -3,7 +3,7 @@ import { jsx, css } from "@emotion/core";
 import React from "react";
 
 const GymSubtitle = () => (
-  <p css={styles}>
+  <p css={styles} className="subtitle">
     Kleitomahos judo club offers programmes for everyone <br />
     from children through seniors to elite athletes competing at international level.
   </p>

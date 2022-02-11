@@ -9,9 +9,13 @@ import Container from "../GlobalComponents/Container";
 
 const GymProgram = () => (
   <div css={styles} className="gymProgram">
+    
+    
+    <div className="float-child">
     <GymTitle />
     <Icon />
     <GymSubtitle />
+    </div>
     <Container>
       <GymProgramCard
         title="JUDO"
@@ -46,6 +50,17 @@ const styles = css`
     display: block;
     flex-wrap: wrap;
     justify-content: space-between;
+  }
+  .float-child{
+    width: 50%;
+    float: right;
+    padding-top: 70px;
+  }
+  .icon{
+    padding-top: 30px;
+  }
+  .subtitle{
+    padding-top: 30px;
   }
   @media (max-width: 700px) {
     .container {
