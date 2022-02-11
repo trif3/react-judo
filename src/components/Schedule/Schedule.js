@@ -18,9 +18,8 @@ const Schedule = () => {
       </h2>
       <Icon />
       <p>
-        Nunc urna sem, laoreet ut metus id, aliquet consequat magna. Sed viverra
-        <br />
-        ipsum dolor, ultricies fermentum massa consequat eu.
+      We offer a variety of training sessions for all levels of judoka.<br />
+      If you are interested, please see the training times below.
       </p>
       <Container>
         <ScheduleLinks setDay={setDay} day={day} />
