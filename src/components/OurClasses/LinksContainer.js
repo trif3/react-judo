@@ -12,7 +12,7 @@ const LinksContainer = ({ setTraining, training }) => {
 
   )
   return (
-  <div css={styles} className="linksContainer" data-aos="fade-up-right" data-aos-once="false" data-aos-mirror="true">
+  <div css={styles} className="linksContainer" data-aos="fade-up" data-aos-once="false" data-aos-mirror="true">
     <button 
       className={training === "FirstClass" ? "active" : ""}
       onClick={() => setTraining("FirstClass")}
