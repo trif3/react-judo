@@ -10,9 +10,9 @@ const Member = ({ text }) => (
       DON’T THINK, BEGIN TODAY
     </h2>
     <p>
-    <mark>We offer regular training sessions for all judoka aged 7 years old onwards. </mark><br />
-    <mark>We have a mix of international competitors to beginners all sharing the dojo at the same time,</mark> <br />
-   <mark>so no matter what your goal is, we will help you achieve it.</mark>
+    We offer regular training sessions for all judoka aged 7 years old onwards. <br />
+    We have a mix of international competitors to beginners all sharing the dojo at the same time,<br />
+    so no matter what your goal is, we will help you achieve it.
     </p>
     < br/>
     
@@ -26,7 +26,7 @@ const styles = css`
   background: url('${GymOverlayBg}') no-repeat center/cover;
   background-attachment: fixed;
   h2 {
-    color: #000000;
+    color: #fff;
     font-weight: 900;
     font-size: 40px;
     letter-spacing: 1.3px;
@@ -35,16 +35,14 @@ const styles = css`
     
   }
   p {
-    color: #000000;
+    color: #fff;
     font-size: 16px;
     line-height: 1.7;
     margin: 20px 0;
     font-weight: 600;
     
   }
-  mark{
-    background-color: rgba(180, 180, 180, 0.4);
-  }
+  
   @media(max-width: 850px) {
     h2{
       font-size: 30px;
