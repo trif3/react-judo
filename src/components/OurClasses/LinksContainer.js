@@ -50,10 +50,11 @@ const styles = css`
   button {
     width: 100%;
     padding: 28px 28px;
-    background-color: #191919;
+    background-color: #202020;
     color: #fff;
     font-weight: 500;
     text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     
     display: flex;
     align-items: center;

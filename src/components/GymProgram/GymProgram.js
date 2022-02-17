@@ -6,6 +6,7 @@ import GymTitle from "./GymTitle";
 import GymSubtitle from "./GymSubtitle";
 import GymProgramCard from "./GymProgramCard";
 import Container from "../GlobalComponents/Container";
+import Image from "../Image/kleidarhosbw.jpg"
 
 const GymProgram = () => (
   <div css={styles} className="gymProgram">
@@ -15,6 +16,7 @@ const GymProgram = () => (
     <GymTitle />
     <Icon />
     <GymSubtitle />
+    <img src={Image} alt="Image" className="img"/>
     </div>
     <Container>
       <GymProgramCard
@@ -50,16 +52,21 @@ const styles = css`
     display: block;
     flex-wrap: wrap;
     justify-content: space-between;
+    
   }
   .float-child{
     width: 50%;
-    float: right;
+    float: left;
     padding-top: 70px;
   }
   .icon{
     padding-top: 30px;
   }
   .subtitle{
+    padding-top: 30px;
+  }
+  .img{
+    width: 72%;
     padding-top: 30px;
   }
   @media (max-width: 700px) {
