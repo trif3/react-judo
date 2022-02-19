@@ -13,9 +13,9 @@ const Contact = () => (
     </Container>
     <footer>
       <p>
-        Copyright &copy; © 2020 Training Studio - Designed by{" "}
+        Copyright &copy; 2022 by{" "}
         <a href="https://templatemo.com/" target="_blank">
-          TemplateMo
+          Kleitomaxos team
         </a>
       </p>
     </footer>
