@@ -14,7 +14,7 @@ const Contact = () => (
     <footer>
       <p>
         Copyright &copy; 2022 by{" "}
-        <a href="https://templatemo.com/" target="_blank">
+        <a href="https://judosport.gr/" target="_blank">
           Kleitomaxos team
         </a>
       </p>
