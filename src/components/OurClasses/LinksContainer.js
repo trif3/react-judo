@@ -37,7 +37,7 @@ const LinksContainer = ({ setTraining, training }) => {
     >
        Advanced Classes
     </button>
-    <Button text="View All Schedules" />
+   <Button text="View All Schedules" linkTo="#schedule"/> 
   </div>)
 };
 
