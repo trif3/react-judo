@@ -10,7 +10,8 @@ const Info = () => (
     <h1>
       WELCOME TO JUDO CLUB
     </h1>
-    <Button text="JOIN US" />
+    <Button text="JOIN US" linkTo="https://www.facebook.com/groups/klitomaxos" target="_blank" />
+    
     
   </div>
 );

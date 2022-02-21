@@ -85,7 +85,7 @@ const styles = css`
     font-size: 17px;
 
     &:hover {
-      transition: 200ms ease-in-out;
+      transition: 700ms ease-in-out;
       color: #fff;
       background-color: #f7373a;
     }
