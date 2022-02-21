@@ -6,6 +6,7 @@ import Member from "./components/Member/Member";
 import Classes from "./components/OurClasses/Classes";
 import Schedule from "./components/Schedule/Schedule";
 import Contact from './components/Contact/Contact';
+import Trainers from './components/Trainers/Trainers';
 
 const App = () => (
   <div className="App">
@@ -14,6 +15,7 @@ const App = () => (
     <Member />
     <Classes />
     <Schedule />
+    <Trainers />
     <Contact />
   </div>
 );
