@@ -96,6 +96,11 @@ const styles = css`
         color: #f7373a;
         cursor: pointer;
       }
+      &:active {
+        transform: scale(0.98);
+        box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+            
+      }
     }
   }
   @media (max-width: 1200px) {
