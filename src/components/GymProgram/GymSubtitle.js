@@ -4,7 +4,7 @@ import React from "react";
 
 const GymSubtitle = () => (
   <p css={styles} className="subtitle">
-    Kleitomahos judo club offers programmes for everyone from<br />
+    Clitomachus judo club offers programmes for everyone from<br />
      children through seniors to elite athletes competing at international level.
   </p>
 );
