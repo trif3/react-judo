@@ -25,7 +25,7 @@ const LinksContainer = ({ setTraining, training }) => {
       </button>
       <button
         className={training === "SecondClass" ? "active" : ""}
-        onClick={() => setTraining("SecondClass")}
+        onClick={() => setTraining("SecondClass") }
       >
         Senior (16+ years old)
       </button>

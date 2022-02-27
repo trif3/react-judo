@@ -31,6 +31,7 @@ const styles = css`
     line-height: 1;
     font-weight: 900;
     letter-spacing: 1.2px;
+    cursor: context-menu;
   }
   h1 {
     font-size: 100px;
@@ -39,6 +40,7 @@ const styles = css`
     line-height: 1;
     font-weight: 900;
     margin: 36px 0;
+    cursor: context-menu;
     span {
       color: #007BA7;
     }

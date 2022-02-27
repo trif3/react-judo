@@ -17,7 +17,7 @@ const Classes = ({ text }) => {
   )
 
   return (
-    <section css={styles} className="ourClasses" id="ourClasses">
+    <section css={styles} className="ourClasses" id="ourClasses"  data-aos="fade">
       <h2 >
        OUR CLASSES 
       </h2>

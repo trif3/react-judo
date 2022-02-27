@@ -10,7 +10,7 @@ import ClassFourBg from "../Image/classFour.jpg";
 const Results = ({ training }) => (
   <div css={styles} className="results">
     {training === "FirstClass" && (
-      <Output
+      <Output 
         title="Junior "
         info="At Clitomachus Judo Club we take children on from the age of 7 years old.
          Judo gives kids a confidence in their physical health and ability, it teaches them to 

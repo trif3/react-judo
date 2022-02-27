@@ -7,7 +7,7 @@ const Logo = () => <img css={styles} src={LineIcon} />;
 
 const styles = css`
   width: 27%;
-  
+  cursor: context-menu;
 `;
 
 export default Logo;
