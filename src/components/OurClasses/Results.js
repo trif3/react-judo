@@ -12,7 +12,7 @@ const Results = ({ training }) => (
     {training === "FirstClass" && (
       <Output
         title="Junior "
-        info="At Kleidarhos Judo Club we take children on from the age of 7 years old.
+        info="At Clitomachus Judo Club we take children on from the age of 7 years old.
          Judo gives kids a confidence in their physical health and ability, it teaches them to 
          respect themselves and others for in judo without a partner there is no practice. 
          Most of all learning judo is FUN and challenging and often can lead to a sport for life."
@@ -23,7 +23,7 @@ const Results = ({ training }) => (
     {training === "SecondClass" && (
       <Output
         title="Senior"
-        info="The senior classes at Kleidarhos judo Club are for anyone aged 16 or older. 
+        info="The senior classes at Clitomachus judo Club are for anyone aged 16 or older. 
         Whatever your level you are welcome on our senior mat. The normal format for every 
         session is a warm-up with stretching, standing or ground work technique 
         and some free practice which is an opportunity for participants to test their skills."
