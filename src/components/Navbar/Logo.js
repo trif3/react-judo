@@ -11,7 +11,7 @@ const styles = css`
   color: #fff;
   font-size: 30px;
   font-family: 'Fugaz One', cursive;
-  cursor: pointer;
+  cursor: context-menu;
   span {
     color: #007BA7;
   }
