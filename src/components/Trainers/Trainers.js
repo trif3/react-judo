@@ -31,12 +31,6 @@ const Trainers = () => (
         desc="Bitters cliche tattooed 8-bit distillery mustache. Keytar succulents gluten-free vegan church-key pour-over seitan flannel."
         img={TrainerTwoBg}
       />
-      <TrainerCard
-        title="Power Trainer"
-        name="Paul D. Newman"
-        desc="Bitters cliche tattooed 8-bit distillery mustache. Keytar succulents gluten-free vegan church-key pour-over seitan flannel."
-        img={TrainerThreeBg}
-      />
     </Container>
   </section>
 );
