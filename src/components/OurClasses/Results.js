@@ -2,10 +2,10 @@
 import { jsx, css } from "@emotion/core";
 import React from "react";
 import Output from "./Output";
-import ClassOneBg from "../Image/classOne.jpg";
-import ClassTwoBg from "../Image/classTwo.jpg";
-import ClassThreeBg from "../Image/classThree.jpg";
-import ClassFourBg from "../Image/classFour.jpg";
+import ClassOneBg from "../Image/junior.jpg";
+import ClassTwoBg from "../Image/senior.jpg";
+import ClassThreeBg from "../Image/intermediate.jpg";
+import ClassFourBg from "../Image/advanced.jpg";
 
 const Results = ({ training }) => (
   <div css={styles} className="results">
