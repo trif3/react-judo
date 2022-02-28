@@ -4,8 +4,8 @@ import React from "react";
 import Icon from "../GlobalComponents/Icon";
 import TrainerCard from "./TrainerCard";
 import Container from "../GlobalComponents/Container";
-import TrainerOneBg from "../Image/trainerOne.jpg";
-import TrainerTwoBg from "../Image/trainerTwo.jpg";
+import TrainerOneBg from "../Image/trainer1.jpg";
+import TrainerTwoBg from "../Image/trainer2.jpg";
 import TrainerThreeBg from "../Image/trainerThree.jpg";
 
 const Trainers = () => (
@@ -56,7 +56,7 @@ const styles = css`
   }
   .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     padding: 50px 0 0 0;
   }
