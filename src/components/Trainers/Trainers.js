@@ -6,7 +6,6 @@ import TrainerCard from "./TrainerCard";
 import Container from "../GlobalComponents/Container";
 import TrainerOneBg from "../Image/trainer1.jpg";
 import TrainerTwoBg from "../Image/trainer2.jpg";
-import TrainerThreeBg from "../Image/trainerThree.jpg";
 
 const Trainers = () => (
   <section css={styles} className="trainers" id="trainers">
