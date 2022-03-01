@@ -21,11 +21,11 @@ const styles = css`
     filter: grayscale(1) brightness(70%);
     transition:.5s ease-in-out;
     &:hover {
-      filter: grayscale(0) brightness(90%);
+      filter: grayscale(0) brightness(100%);
       
 }
     }
-  }
+  
 
   h2 {
     margin: 34px 0 0 0;

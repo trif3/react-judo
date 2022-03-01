@@ -44,7 +44,7 @@ const styles = css`
       color: #f7373a;
     }
     p {
-      color: #00000;
+      color: black;
       font-size: 16px;
       line-height: 1.7;
     }
