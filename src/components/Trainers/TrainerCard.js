@@ -40,14 +40,11 @@ const styles = css`
     font-weight: 400;
     line-height: 1.7;
   }
-  @media (max-width: 830px) {
-    max-width: 540px;
+  @media (max-width: 768px) {
+    max-width: 500px;
     margin: 14px 0;
   }
-  @media (min-width: 831px) and (max-width: 1226px) {
-    max-width: 47%;
-    margin: 14px 0;
-  }
+  
 `;
 
 export default TrainerCard;

@@ -59,27 +59,13 @@ const styles = css`
     align-items: center;
     padding: 50px 0 0 0;
   }
-  @media (max-width: 650px) {
-    > p {
-      padding: 0 30px;
-      br {
-        display: none;
-      }
-    }
-  }
-  @media (max-width: 830px) {
-    .container {
-      flex-direction: column;
-      align-items: center;
-    }
-  }
-  @media (min-width: 831px) and (max-width: 1226px) {
-    .container {
-      flex-wrap: wrap;
+  @media (max-width: 768px){
+    .container{
+      padding: 30px 0 0 0;
       justify-content: space-between;
-      max-width: 780px;
     }
   }
+  
 `;
 
 export default Trainers;

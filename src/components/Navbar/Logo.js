@@ -15,6 +15,9 @@ const styles = css`
   span {
     color: #007BA7;
   }
+  @media (max-width: 425px){
+    font-size: 20px;
+  }
 `;
 
 export default Logo;

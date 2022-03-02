@@ -43,12 +43,13 @@ const styles = css`
     
   }
   
-  @media(max-width: 850px) {
+  @media(max-width: 768px) {
     h2{
-      font-size: 30px;
+      font-size: 26px;
     }
     p{
       padding: 0 20px;
+      font-size: 15px;
       br{
         display: none;
       }

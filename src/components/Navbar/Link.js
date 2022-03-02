@@ -28,8 +28,19 @@ const styles = css`
   }
   @media (max-width: 1000px) {
     padding: 14px 0;
-    width: 100%;
+    width: 30%;
+    padding-left: 6px;
     font-size: 18px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid #eee;
+    border-radius: 1px;
+    
+  }
+  @media (max-width: 425px){
+    font-size: 10px;
+    padding: 8px 0;
+    padding-left: 6px;
+    background: rgba(255, 255, 255, 0.06);
   }
 `;
 

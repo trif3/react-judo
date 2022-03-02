@@ -59,11 +59,14 @@ const styles = css`
       }
     }
   }
-  @media (max-width: 700px) {
+  
+  
+  @media (max-width: 768px){
+    width: 100%;
     max-width: 100%;
-  }
-  @media (min-width: 701px) and (max-width: 1100px){
-    max-width: 80%;
+    p{
+      font-size: 10px;
+    }
   }
 `;
 

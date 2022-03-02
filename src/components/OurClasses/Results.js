@@ -65,12 +65,9 @@ const styles = css`
       background: blue;
     }
   }
-  @media(max-width: 900px){
+  @media(max-width: 768px){
     max-width: 590px;
     padding: 30px 0 0 0;
-  }
-  @media (min-width: 901px) and (max-width: 1226px){
-    max-width: 62%;
   }
 `;
 

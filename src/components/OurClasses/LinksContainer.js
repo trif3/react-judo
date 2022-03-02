@@ -90,12 +90,14 @@ const styles = css`
       background-color: #f7373a;
     }
   }
-  @media (max-width: 900px) {
+  @media (max-width: 768px) {
     max-width: 590px;
+    
+    button{
+      display:inline-block;
+    }
   }
-  @media (min-width: 901px) and (max-width: 1226px) {
-    max-width: 280px;
-  }
+  
 `;
 
 export default LinksContainer;

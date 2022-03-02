@@ -55,26 +55,21 @@ const styles = css`
     justify-content: space-between;
     padding: 80px 0 0 0;
   }
-  @media (max-width: 900px) {
-    .container {
-      flex-direction: column;
-      align-items: center;
+ 
+  @media (max-width: 768px){
+    padding: 60px 0;
+    h2{
+      margin-bottom: 15px;
     }
-  }
-  @media (max-width: 580px) {
-    p {
-      padding: 0 20px;
-      br {
-        display: none;
-      }
+    p{
+      padding: 20px 20px;
     }
-  }
-  @media (min-width: 901px) and (max-width: 1226px) {
-    .container{
-      justify-content: space-between;
-      max-width: 90%;
+    .subtitle{
+      padding-top: 10px;
     }
-  }
+    .img{
+      padding-bottom: 10px;
+    }}
 `;
 
 export default Classes;

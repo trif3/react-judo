@@ -19,13 +19,11 @@ const styles = css`
     display: block;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     filter: grayscale(1) brightness(70%);
-    transition:.5s ease-in-out;
+    transition: 0.5s ease-in-out;
     &:hover {
       filter: grayscale(0) brightness(100%);
-      
-}
     }
-  
+  }
 
   h2 {
     margin: 34px 0 0 0;
@@ -39,7 +37,8 @@ const styles = css`
   .btn {
     padding: 14px 26px;
   }
-  @media (max-width: 900px) {
+  @media (max-width: 768px) {
+    width: 100%;
     img {
       height: 260px;
     }
