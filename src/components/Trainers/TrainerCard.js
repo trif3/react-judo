@@ -41,8 +41,21 @@ const styles = css`
     line-height: 1.7;
   }
   @media (max-width: 768px) {
-    max-width: 500px;
-    margin: 14px 0;
+    max-width: 49%;
+    padding: 20px;
+    h4{
+      margin: 10px 0 9px 0;
+      font-weight: 900px
+    }
+    h3{
+      font-size: 16px;
+    }
+    p{
+      font-size: 13px;
+      margin: 14px 0 2px 0;
+      padding: 2px 4px 5px 1px;
+      line-height: 1.3;
+    }
   }
   
 `;

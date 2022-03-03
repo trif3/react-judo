@@ -60,8 +60,19 @@ const styles = css`
     padding: 50px 0 0 0;
   }
   @media (max-width: 768px){
+    padding: 80px 0;
+    h2{
+      font-size: 30px;
+    }
+    .icon{
+      padding-top: 10px;
+    }
+    p{
+      font-size: 14px;
+      padding: 0 17px 0 17px;
+    }
     .container{
-      padding: 30px 0 0 0;
+      
       justify-content: space-between;
     }
   }

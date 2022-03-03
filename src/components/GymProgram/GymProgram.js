@@ -6,17 +6,15 @@ import GymTitle from "./GymTitle";
 import GymSubtitle from "./GymSubtitle";
 import GymProgramCard from "./GymProgramCard";
 import Container from "../GlobalComponents/Container";
-import Image from "../Image/kleidarhosbw.jpg"
+import Image from "../Image/kleidarhosbw.jpg";
 
 const GymProgram = () => (
   <div css={styles} className="gymProgram">
-    
-    
     <div className="float-child">
-    <GymTitle />
-    <Icon />
-    <GymSubtitle />
-    <img src={Image} alt="Image" className="img"/>
+      <GymTitle />
+      <Icon />
+      <GymSubtitle />
+      <img src={Image} alt="Image" className="img" />
     </div>
     <Container>
       <GymProgramCard
@@ -79,6 +77,9 @@ const styles = css`
     .float-child{
       width: 100%;
       float: center;
+    }
+    .icon{
+      padding-top: 10px;
     }
     .subtitle{
       padding-top: 10px;

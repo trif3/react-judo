@@ -34,13 +34,26 @@ const styles = css`
   p {
     margin: 20px 0;
   }
-  .btn {
-    padding: 14px 26px;
-  }
+
   @media (max-width: 768px) {
     width: 100%;
+    margin-top: -30px;
+
     img {
-      height: 260px;
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    h2 {
+      margin: 10px 0 0 0;
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 1;
+    }
+    p {
+      padding: 4px 0 0 ;
+      margin: 2px;
+      font-size: 12px;
     }
   }
 `;

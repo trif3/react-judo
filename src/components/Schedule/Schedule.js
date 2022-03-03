@@ -13,13 +13,12 @@ const Schedule = () => {
 
   return (
     <section css={styles} className="schedule" id="schedule">
-      <h2>
-      CLASSES SCHEDULE
-      </h2>
+      <h2>CLASSES SCHEDULE</h2>
       <Icon />
       <p>
-      We offer a variety of training sessions for all levels of judoka.<br />
-      If you are interested, please see the training times below.
+        We offer a variety of training sessions for all levels of judoka.
+        <br />
+        If you are interested, please see the training times below.
       </p>
       <Container>
         <ScheduleLinks setDay={setDay} day={day} />
@@ -34,14 +33,14 @@ const styles = css`
   padding: 120px 0;
   min-height: 100vh;
   text-align: center;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('${scheduleBg}') no-repeat center/cover ;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("${scheduleBg}") no-repeat center/cover;
 
   h2 {
     color: #f7373a;
-  font-size: 40px;
-  font-weight: 900;
-  line-height: 1;
-  
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 1;
   }
   p {
     color: #fff;
@@ -49,20 +48,20 @@ const styles = css`
     line-height: 1.7;
     margin: 20px 0;
   }
-  .container{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-  @media(max-width: 640px) {
-    p{
-      padding: 0 30px;
-      br{
-        display: none;
-      }
+  @media (max-width: 768px) {
+    padding: 80px 0;
+    h2 {
+      font-size: 30px;
+      margin-bottom: 10px;
     }
-    .container{
-      max-width: 92%;
+    p {
+      font-size: 14px;
+      margin: 14px;
     }
   }
 `;
