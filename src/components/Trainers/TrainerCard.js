@@ -1,16 +1,22 @@
 /** @jsx jsx */
 import { jsx, css } from "@emotion/core";
-import React from "react";
+import React, {useEffect} from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 
-const TrainerCard = ({ title, name, desc, img }) => (
-  <div css={styles} className="card">
+const TrainerCard = ({ title, name, desc, img }) => {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
+  return(
+  <div css={styles} className="card" data-aos="fade-up">
     <img src={img} alt="trainer" />
     <h4>{title}</h4>
     <h3>{name}</h3>
     <p>{desc}</p>
-  </div>
-);
+  </div>)
+};
 
 const styles = css`
   width: 100%;
