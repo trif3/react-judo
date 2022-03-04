@@ -3,7 +3,10 @@ import { jsx, css } from "@emotion/core";
 import Link from "./Link";
 import ButtonSignUp from "../GlobalComponents/ButtonSignUp";
 
+
 const LinksContainer = ({ hidden }) => {
+  
+
   return (
     <div css={styles} className={(hidden ? "hidden" : "") + " linksContainer"}>
       <Link name="HOME" linkTo="#home" />
@@ -11,6 +14,7 @@ const LinksContainer = ({ hidden }) => {
       <Link name="SCHEDULES" linkTo="#schedule" />
       <Link name="TRAINERS" linkTo="#trainers" />
       <Link name="CONTACT" linkTo="#contact" />
+      
       {/* <ButtonSignUp text="SIGN UP" /> */}
     </div>
   );
@@ -22,7 +26,7 @@ const styles = css`
   max-width: 620px;
   align-items: center;
   justify-content: space-between;
- 
+
   @media (max-width: 1000px) {
     max-width: 100%;
     padding: 0 30px 20px 30px;
@@ -32,7 +36,7 @@ const styles = css`
     position: absolute;
     left: 0;
     top: 70px;
-    background: rgba(255, 255, 255, );
+    background: rgba(255, 255, 255);
     transition: top 1100ms ease-in-out, opacity 1100ms ease-in-out;
     &.hidden {
       left: 0;
