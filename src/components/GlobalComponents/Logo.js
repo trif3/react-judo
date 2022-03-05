@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx, css } from "@emotion/core";
 import React from "react";
-import LineIcon from "../Image/Untitled_Artwork.png";
+import LineIcon from "../Image/mainlogo.png";
 
 const Logo = () => <img css={styles} src={LineIcon} />;
 

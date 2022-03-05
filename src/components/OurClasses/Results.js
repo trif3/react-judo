@@ -2,10 +2,10 @@
 import { jsx, css } from "@emotion/core";
 import React from "react";
 import Output from "./Output";
-import ClassOneBg from "../Image/classOne.jpg";
-import ClassTwoBg from "../Image/classTwo.jpg";
-import ClassThreeBg from "../Image/classThree.jpg";
-import ClassFourBg from "../Image/classFour.jpg";
+import ClassOneBg from "../Image/juniortest.jpg";
+import ClassTwoBg from "../Image/senior.jpg";
+import ClassThreeBg from "../Image/intermediate.jpg";
+import ClassFourBg from "../Image/advanced.jpg";
 
 const Results = ({ training }) => (
   <div css={styles} className="results">
@@ -65,12 +65,9 @@ const styles = css`
       background: blue;
     }
   }
-  @media(max-width: 900px){
+  @media(max-width: 768px){
     max-width: 590px;
     padding: 30px 0 0 0;
-  }
-  @media (min-width: 901px) and (max-width: 1226px){
-    max-width: 62%;
   }
 `;
 

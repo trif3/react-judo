@@ -42,7 +42,7 @@ const styles = css`
     }
   }
   @media (max-width: 1000px) {
-    background: rgba(35, 45, 57, 0.8);
+    background: rgba(255, 255, 255, 0.06);
     .container {
       flex-wrap: wrap;
       #burgerMenu {

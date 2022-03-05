@@ -24,7 +24,7 @@ const Table = ({ day }) => {
           <td>Senior Beginners</td>
           <td>
             <span className={day === "Friday" ? "" : "hidden"}>
-             16:00PM - 17:30PM
+              16:00PM - 17:30PM
             </span>
           </td>
           <td>
@@ -63,7 +63,7 @@ const Table = ({ day }) => {
           <td>Hector T. Daigle</td>
         </tr>
         <tr>
-          <td>Advanced  </td>
+          <td>Advanced </td>
           <td>
             <span className={day === "Thursday" ? "" : "hidden"}>
               19:00PM - 20:30PM
@@ -71,7 +71,7 @@ const Table = ({ day }) => {
           </td>
           <td>
             <span className={day === "Wednesday" ? "" : "hidden"}>
-            19:00PM - 20:30PM
+              19:00PM - 20:30PM
             </span>
           </td>
           <td>Bret D. Bowers</td>
@@ -103,15 +103,13 @@ const styles = css`
   .hidden {
     opacity: 0;
   }
-  @media (max-width: 640px) {
-    font-size: 12px;
+  @media (max-width: 768px) {
+    font-size: 11px;
+    margin: 30px 0 0 0;
     tr {
       td {
-        padding: 40px 0;
+        padding: 30px 6px;
         width: 200px;
-        span {
-          font-size: 11px;
-        }
       }
     }
   }

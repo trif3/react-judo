@@ -12,19 +12,24 @@ import Container from "../GlobalComponents/Container";
 const Classes = ({ text }) => {
   const [training, setTraining] = useState("FirstClass");
   useEffect(() => {
-    Aos.init({ duration: 2000});
-  }, []
-  )
+    Aos.init({ duration: 2000 });
+  }, []);
 
   return (
-    <section css={styles} className="ourClasses" id="ourClasses"  data-aos="fade">
-      <h2 >
-       OUR CLASSES 
-      </h2>
+    <section
+      css={styles}
+      className="ourClasses"
+      id="ourClasses"
+      data-aos="fade"
+    >
+      <h2>OUR CLASSES</h2>
       <Icon />
       <p>
-      The Clitomachus offers a comprehensive timetable of Judo classes for kids, teens and adults.<br />
-      We regularly run Adult Beginners Courses, as well  as classes for  Junior Beginners, Intermediate Judo and Advanced Judo
+        The Clitomachus offers a comprehensive timetable of Judo classes for
+        kids, teens and adults.
+        <br />
+        We regularly run Adult Beginners Courses, as well as classes for Junior
+        Beginners, Intermediate Judo and Advanced Judo
       </p>
       <Container>
         <LinksContainer setTraining={setTraining} training={training} />
@@ -40,10 +45,10 @@ const styles = css`
   text-align: center;
   h2 {
     color: #232d39;
-  font-size: 40px;
-  font-weight: 900;
-  line-height: 1;
- margin-top: -20px;
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 1;
+    margin-top: -20px;
   }
   p {
     color: #7a7a7a;
@@ -55,24 +60,27 @@ const styles = css`
     justify-content: space-between;
     padding: 80px 0 0 0;
   }
-  @media (max-width: 900px) {
-    .container {
-      flex-direction: column;
-      align-items: center;
+
+  @media (max-width: 768px) {
+    padding: 60px 0;
+    h2 {
+      font-size: 30px;
+      margin-bottom: 15px;
     }
-  }
-  @media (max-width: 580px) {
     p {
-      padding: 0 20px;
-      br {
-        display: none;
-      }
+      padding: 10px 20px;
+      font-size: 14px;
     }
-  }
-  @media (min-width: 901px) and (max-width: 1226px) {
-    .container{
+    .subtitle {
+      padding-top: 10px;
+    }
+    .img {
+      padding-bottom: 10px;
+    }
+    .container {
+      display: flex;
       justify-content: space-between;
-      max-width: 90%;
+      padding: 30px 0 0 0;
     }
   }
 `;

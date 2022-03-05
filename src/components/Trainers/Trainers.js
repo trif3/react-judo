@@ -4,9 +4,8 @@ import React from "react";
 import Icon from "../GlobalComponents/Icon";
 import TrainerCard from "./TrainerCard";
 import Container from "../GlobalComponents/Container";
-import TrainerOneBg from "../Image/trainerOne.jpg";
-import TrainerTwoBg from "../Image/trainerTwo.jpg";
-import TrainerThreeBg from "../Image/trainerThree.jpg";
+import TrainerOneBg from "../Image/trainer1.jpg";
+import TrainerTwoBg from "../Image/trainer2.jpg";
 
 const Trainers = () => (
   <section css={styles} className="trainers" id="trainers">
@@ -30,12 +29,6 @@ const Trainers = () => (
         name="Hector T. Daigl"
         desc="Bitters cliche tattooed 8-bit distillery mustache. Keytar succulents gluten-free vegan church-key pour-over seitan flannel."
         img={TrainerTwoBg}
-      />
-      <TrainerCard
-        title="Power Trainer"
-        name="Paul D. Newman"
-        desc="Bitters cliche tattooed 8-bit distillery mustache. Keytar succulents gluten-free vegan church-key pour-over seitan flannel."
-        img={TrainerThreeBg}
       />
     </Container>
   </section>
@@ -62,31 +55,28 @@ const styles = css`
   }
   .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     padding: 50px 0 0 0;
   }
-  @media (max-width: 650px) {
-    > p {
-      padding: 0 30px;
-      br {
-        display: none;
-      }
+  @media (max-width: 768px){
+    padding: 80px 0;
+    h2{
+      font-size: 30px;
     }
-  }
-  @media (max-width: 830px) {
-    .container {
-      flex-direction: column;
-      align-items: center;
+    .icon{
+      padding-top: 10px;
     }
-  }
-  @media (min-width: 831px) and (max-width: 1226px) {
-    .container {
-      flex-wrap: wrap;
+    p{
+      font-size: 14px;
+      padding: 0 17px 0 17px;
+    }
+    .container{
+      
       justify-content: space-between;
-      max-width: 780px;
     }
   }
+  
 `;
 
 export default Trainers;

@@ -6,17 +6,15 @@ import GymTitle from "./GymTitle";
 import GymSubtitle from "./GymSubtitle";
 import GymProgramCard from "./GymProgramCard";
 import Container from "../GlobalComponents/Container";
-import Image from "../Image/kleidarhosbw.jpg"
+import Image from "../Image/kleidarhosbw.jpg";
 
 const GymProgram = () => (
   <div css={styles} className="gymProgram">
-    
-    
     <div className="float-child">
-    <GymTitle />
-    <Icon />
-    <GymSubtitle />
-    <img src={Image} alt="Image" className="img"/>
+      <GymTitle />
+      <Icon />
+      <GymSubtitle />
+      <img src={Image} alt="Image" className="img" />
     </div>
     <Container>
       <GymProgramCard
@@ -69,18 +67,30 @@ const styles = css`
     width: 72%;
     padding-top: 30px;
   }
-  @media (max-width: 700px) {
-    .container {
-      flex-direction: column;
-      justify-content: flex-start;
+  
+  @media (max-width: 768px){
+    padding: 30px 0;
+    .container{
+      width: 100%;
+      float: center;
     }
-  }
-  @media (min-width: 701px) and (max-width: 1100px) {
-    .container {
-      flex-direction: column;
-      align-items: center;
+    .float-child{
+      width: 100%;
+      float: center;
     }
+    .icon{
+      padding-top: 10px;
+    }
+    .subtitle{
+      padding-top: 10px;
+    }
+    .img{
+      padding-bottom: 10px;
+    }
+    
+
   }
+
 `;
 
 export default GymProgram;

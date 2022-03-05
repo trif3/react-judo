@@ -2,26 +2,41 @@
 import { jsx, css } from "@emotion/core";
 import React from "react";
 
-const ScheduleLinks = ({ setDay , day}) => {
+const ScheduleLinks = ({ setDay, day }) => {
   return (
     <div className="links" css={styles}>
-      <button className={day === 'Monday' ? 'active' : ''} onClick={() => setDay("Monday")}>
+      <button
+        className={day === "Monday" ? "active" : ""}
+        onClick={() => setDay("Monday")}
+      >
         Monday
       </button>
       <span>/</span>
-      <button className={day === 'Tuesday' ? 'active' : ''} onClick={() => setDay("Tuesday")}>
+      <button
+        className={day === "Tuesday" ? "active" : ""}
+        onClick={() => setDay("Tuesday")}
+      >
         Tuesday
       </button>
       <span>/</span>
-      <button className={day === 'Wednesday' ? 'active' : ''} onClick={() => setDay("Wednesday")}>
+      <button
+        className={day === "Wednesday" ? "active" : ""}
+        onClick={() => setDay("Wednesday")}
+      >
         Wednesday
       </button>
       <span>/</span>
-      <button className={day === 'Thursday' ? 'active' : ''} onClick={() => setDay("Thursday")}>
+      <button
+        className={day === "Thursday" ? "active" : ""}
+        onClick={() => setDay("Thursday")}
+      >
         Thursday
       </button>
       <span>/</span>
-      <button className={day === 'Friday' ? 'active' : ''} onClick={() => setDay("Friday")}>
+      <button
+        className={day === "Friday" ? "active" : ""}
+        onClick={() => setDay("Friday")}
+      >
         Friday
       </button>
     </div>
@@ -46,9 +61,13 @@ const styles = css`
     color: #fff;
     padding: 0 16px;
   }
-  @media(max-width: 640px) {
-    button{
+  @media (max-width: 768px) {
+    padding: 10px 0 0 0;
+    button {
       font-size: 14px;
+    }
+    span {
+      padding: 0 9px;
     }
   }
 `;

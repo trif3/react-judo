@@ -4,22 +4,19 @@ import React, { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
-
 const GymProgramCard = ({ title, desc }) => {
   useEffect(() => {
-    Aos.init({ duration: 2000});
-  }, []
-
-  )
-return(
-  <div css={styles} className="card" data-aos="fade-up">
-    
-    <div className="cardInfo">
-      <h4>{title}</h4>
-      <p>{desc}</p>
-      {/* <a href="#/">DISCOVER MORE</a> */}
+    Aos.init({ duration: 2000 });
+  }, []);
+  return (
+    <div css={styles} className="card" data-aos="fade-up">
+      <div className="cardInfo">
+        <h4>{title}</h4>
+        <p>{desc}</p>
+        {/* <a href="#/">DISCOVER MORE</a> */}
+      </div>
     </div>
-  </div>);
+  );
 };
 
 const styles = css`
@@ -30,21 +27,19 @@ const styles = css`
   margin: 20px 0;
   border: 2px;
 
-  
   .cardInfo {
-   
     padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: rgb(240, 240, 240) ;
+    background-color: rgb(240, 240, 240);
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 
     h4 {
       color: #f7373a;
     }
     p {
-      color: #00000;
+      color: black;
       font-size: 16px;
       line-height: 1.7;
     }
@@ -55,15 +50,22 @@ const styles = css`
       font-size: 14px;
       font-weight: 500;
       &:hover {
-        color: #6699E0;
+        color: #6699e0;
       }
     }
   }
-  @media (max-width: 700px) {
+
+  @media (max-width: 768px) {
+    width: 100%;
     max-width: 100%;
-  }
-  @media (min-width: 701px) and (max-width: 1100px){
-    max-width: 80%;
+    .cardInfo {
+      h4 {
+        font-size: 16px;
+      }
+      p {
+        font-size: 13px;
+      }
+    }
   }
 `;
 

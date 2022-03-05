@@ -25,7 +25,7 @@ const LinksContainer = ({ setTraining, training }) => {
       </button>
       <button
         className={training === "SecondClass" ? "active" : ""}
-        onClick={() => setTraining("SecondClass") }
+        onClick={() => setTraining("SecondClass")}
       >
         Senior (16+ years old)
       </button>
@@ -90,11 +90,21 @@ const styles = css`
       background-color: #f7373a;
     }
   }
-  @media (max-width: 900px) {
-    max-width: 590px;
-  }
-  @media (min-width: 901px) and (max-width: 1226px) {
-    max-width: 280px;
+  @media (max-width: 768px) {
+    max-width: 30%;
+    padding-right: 5px;
+
+    button {
+      width: 100%;
+      padding: 10px 10px;
+      font-weight: 400;
+      margin-bottom: 10px;
+      font-size: 13px;
+    }
+    .btn{
+      padding: 3px;
+      font-size: 12px;
+    }
   }
 `;
 

@@ -1,16 +1,22 @@
 /** @jsx jsx */
 import { jsx, css } from "@emotion/core";
-import React from "react";
+import React, {useEffect} from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 
-const TrainerCard = ({ title, name, desc, img }) => (
-  <div css={styles} className="card">
+const TrainerCard = ({ title, name, desc, img }) => {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
+  return(
+  <div css={styles} className="card" data-aos="fade-up">
     <img src={img} alt="trainer" />
     <h4>{title}</h4>
     <h3>{name}</h3>
     <p>{desc}</p>
-  </div>
-);
+  </div>)
+};
 
 const styles = css`
   width: 100%;
@@ -40,14 +46,24 @@ const styles = css`
     font-weight: 400;
     line-height: 1.7;
   }
-  @media (max-width: 830px) {
-    max-width: 540px;
-    margin: 14px 0;
+  @media (max-width: 768px) {
+    max-width: 49%;
+    padding: 20px;
+    h4{
+      margin: 10px 0 9px 0;
+      font-weight: 900px
+    }
+    h3{
+      font-size: 16px;
+    }
+    p{
+      font-size: 13px;
+      margin: 14px 0 2px 0;
+      padding: 2px 4px 5px 1px;
+      line-height: 1.3;
+    }
   }
-  @media (min-width: 831px) and (max-width: 1226px) {
-    max-width: 47%;
-    margin: 14px 0;
-  }
+  
 `;
 
 export default TrainerCard;
