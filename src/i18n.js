@@ -1,26 +1,35 @@
 import i18n from "i18next";
-import { reactI18nextModule } from "react-i18next";
-
-import translationEN from '../public/locales/en/translation.json';
-
-// the translations
-const resources = {
-  en: {
-    translation: translationEN
-  }
-};
+import { initReactI18next } from "react-i18next";
+import LanguageDetector from "i18next-browser-languagedetector";
 
 i18n
-  .use(reactI18nextModule) // passes i18n down to react-i18next
+  .use(LanguageDetector)
+  .use(initReactI18next)
   .init({
-    resources,
-    lng: "en",
-
-    keySeparator: false, // we do not use keys in form messages.welcome
-
+    debug: true,
+    fallbackLng: "gr",
     interpolation: {
-      escapeValue: false // react already safes from xss
-    }
+      escapeValue: false, // not needed for react as it escapes by default
+    },
+    resources: {
+      en: {
+        translation: {
+          main: {
+            over20years: "OVER 20 YEARS OF EXCELLENCE",
+            welcome: "WELCOME TO JUDO CLUB"
+          },
+        },
+      },
+
+      gr: {
+        translation: {
+          main: {
+            over20years: "20 ΧΡΟΝΙΑ ΕΠΙΤΥΧΙΑΣ",
+            welcome: "ΚΑΛΩΣΟΡΙΣΑΤΕ ΣΤΟΝ ΣΥΛΛΟΓΟ ΜΑΣ"
+          },
+        },
+      },
+    },
   });
 
 export default i18n;
