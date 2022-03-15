@@ -13,7 +13,6 @@ const GymProgramCard = ({ title, desc }) => {
       <div className="cardInfo">
         <h4>{title}</h4>
         <p>{desc}</p>
-        {/* <a href="#/">DISCOVER MORE</a> */}
       </div>
     </div>
   );

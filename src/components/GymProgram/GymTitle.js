@@ -2,11 +2,17 @@
 import { jsx, css } from "@emotion/core";
 import React from "react";
 
-const GymTitle = () => (
+import { useTranslation, Trans } from "react-i18next";
+
+function GymTitle() {
+
+  const { t, i18n } = useTranslation();
+
+  return(
   <h2 css={styles} className="gymtitle">
-    CHOOSE PROGRAM
-  </h2>
-);
+    <Trans i18nKey='gymcard.title'/>
+  </h2>)
+};
 
 const styles = css`
   color: #232d39;
