@@ -3,6 +3,8 @@ import { jsx, css } from "@emotion/core";
 import React from "react";
 import Button from "../GlobalComponents/Button";
 
+
+
 const Output = ({ title, info, img }) => (
   <div css={styles} className="output">
     <img src={img} alt="class" />
@@ -32,6 +34,8 @@ const styles = css`
     line-height: 1;
   }
   p {
+    width: 684px;
+    text-align: justify;
     margin: 20px 0;
   }
 
