@@ -34,7 +34,7 @@ const styles = css`
     line-height: 1;
   }
   p {
-    width: 684px;
+    width: 100%;
     text-align: justify;
     margin: 20px 0;
   }

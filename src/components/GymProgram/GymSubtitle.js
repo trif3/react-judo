@@ -21,6 +21,7 @@ const styles = css`
   margin: 0 auto;
   @media (max-width: 700px) {
     padding: 0 40px;
+    width: 90%;
     br {
       display: none;
     }

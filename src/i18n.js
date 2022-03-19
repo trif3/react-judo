@@ -33,8 +33,8 @@ i18n
             subtitle: "The Clitomachus offers a comprehensive timetable of Judo classes for kids, teens and adults. We regularly run Adult Beginners Courses, as well as classes for Junior Beginners, Intermediate Judo and Advanced Judo",
           },
           buttons: {
-            junior: "Junior (7-16 years old)",
-            senior: "Senior (16+ years old)",
+            junior: "Junior",
+            senior: "Senior",
             intermediate: "Intermediate",
             advanced: "Advanced",
           },
@@ -48,6 +48,28 @@ i18n
               output_senior: "The senior classes at Clitomachus judo Club are for anyone aged 16 or older. Whatever your level you are welcome on our senior mat. The normal format for every session is a warm-up with stretching, standing or ground work technique and some free practice which is an opportunity for participants to test their skills.",
               output_intermediate: "Our intermediate classes are tailored for those juniors who have completed beginners courses and are looking to continue their judo training. This level links beginners up to the age of 12 to the advanced junior class. The emphasis in these classes is fun and technical development.  The classes are age specific and will develop your child’s judo as they grow older.",
               output_advanced: "The Advanced Class is aimed at athletes of all ages who want to be challenged. Some of the training group regularly attend competitions and camps around the country (and Europe).",
+          },
+          schedule: {
+            title: "CLASSES SCHEDULE",
+            subtitle: "We offer a variety of training sessions for all levels of judoka. If you are interested, please see the training times below.",
+          },
+          schedulelinks: {
+            monday: "Monday",
+            tuesday: "Tuesday",
+            wednesday: "Wednesday",
+            thursday: "Thursday",
+            friday: "Friday",
+          },
+          table: {
+             jb: "Junior Beginners",
+             sb: "Senior Beginners",
+             ji: "Junior Intermediate",
+             si: "Senior Intermediate",
+             a: "Advanced",
+          },
+          trainers: {
+            title: "INSTRUCTORS",
+            subtitle: "Οur team consists of the most renowned trainers. Their combined experiences spans all levels of competition from regional to the highest level."
           },
         },
       },
@@ -69,8 +91,8 @@ i18n
             paragraph: 'Προσφέρουμε εντατικές προπονήσεις για όλους τους τζούντοκα ηλικίας 7 ετών και άνω. Στο προπονητικό μας κέντρο θα βρείτε αρχάριους και προχωρημένους να μοιράζονται το dojo ταυτόχρονα, οπότε ανεξάρτητα από το ποιος είναι ο στόχος σας, θα σας βοηθήσουμε να τον πετύχετε.'
           },
           classes: {
-            title: "ΤΑ ΤΜΗΜΑΤΑ ΜΑΣ",
-            subtitle: "Ο Κλειτομάχος παρέχει ένα ολοκληρωμένο πρόγραμμα μαθημάτων Τζούντο για παιδιά, εφήβους και ενήλικες. Διεξάγουμε συχνές προπονήσεις για ενήλικες που έρχονται σε επαφή με το άθλημα για πρώτη φορά, καθώς και προπονήσεις για αρχάριους, μεσαίου επιπέδου και προχωρημένους αθλητές όλων των ηλικιών.",
+            title: "ΤΜΗΜΑΤΑ",
+            subtitle: "Στον Κλειτομάχο διεξάγουμε συχνές προπονήσεις για ενήλικες που έρχονται σε επαφή με το άθλημα για πρώτη φορά, καθώς και προπονήσεις για αρχάριους, μεσαίου επιπέδου και προχωρημένους αθλητές όλων των ηλικιών.",
           },
           buttons: {
             junior: "Παιδικό ",
@@ -89,6 +111,28 @@ i18n
               output_intermediate: "Οι τάξεις των προχωρημένων είναι προσαρμοσμένες για εκείνους που έχουν ολοκληρώσει τα  μαθήματα αρχάριου επιπέδου και αναζητούν να συνεχίσουν την προπόνησή τους στο τζούντο. Δίνουμε έμφαση στην τεχνική ανάπτυξη, στην ορθή στάση του κορμού και στην φυσική ενδυνάμωση. Τα μαθήματα είναι ανάλογα με την ηλικία και επικεντρώ στην ανάπτυξη των δεξιοτήτων του παιδιού σας.",
               output_advanced: "Το τμήμα αυτό απευθύνεται σε αθλητές όλων των ηλικιών που θέλουν να αναπτύξουν τις ικανότητες τους και να ξεπεράσουν τα όρια τους. Εκλεκτά μέλη της ομάδας  έχουν την μοναδική ευκαιρία να συμμετέχουν σε διαγωνισμούς και αθλητικές εκδηλώσεις ανά την Ελλάδα και σε διάφορες χώρες της Ευρώπης.",
           },
+          schedule: {
+            title: "ΠΡΟΓΡΑΜΜΑ",
+            subtitle: "Προσφέρουμε πολύμορφα τμήματα προπονήσεων για όλα τα επίπεδα τζούντοκα. Αν ενδιαφέρεστε, δείτε τις ώρες εκπαίδευσης παρακάτω.",
+          },
+          schedulelinks: {
+            monday: "Δευτέρα",
+            tuesday: "Τρίτη",
+            wednesday: "Τετάρτη",
+            thursday: "Πέμπτη",
+            friday: "Παρασκευή",
+          },
+          table: {
+            jb: "Παιδικό Αρχαρίων",
+            sb: "Εφηβικό Αρχαρίων",
+            ji: "Παιδικό Προχωρημένων",
+            si: "Εφηβικό Προχωρημένων",
+            a: "Επαγγελματικό",
+         },
+         trainers: {
+          title: "ΠΡΟΠΟΝΗΤΕΣ",
+          subtitle: "Η ομάδα μας αποτελείται από καταξιωμένους εκπαιδευτές με μακροχρόνια εμπειρία στον κλάδο των πολεμικών τεχνών."
+        }
         },
       },
     },

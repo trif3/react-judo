@@ -6,6 +6,7 @@ import scheduleBg from "../Image/scheduleBg.jpeg";
 import ScheduleLinks from "./ScheduleLinks";
 import Table from "./Table";
 import Container from "../GlobalComponents/Container";
+import { t } from "i18next";
 
 const Schedule = () => {
   const [hidden, setHidden] = useState(false);
@@ -13,13 +14,9 @@ const Schedule = () => {
 
   return (
     <section css={styles} className="schedule" id="schedule">
-      <h2>CLASSES SCHEDULE</h2>
+      <h2>{t('schedule.title')}</h2>
       <Icon />
-      <p>
-        We offer a variety of training sessions for all levels of judoka.
-        <br />
-        If you are interested, please see the training times below.
-      </p>
+      <p>{t('schedule.subtitle')}</p>
       <Container>
         <ScheduleLinks setDay={setDay} day={day} />
         <Table day={day} />
@@ -37,7 +34,7 @@ const styles = css`
     url("${scheduleBg}") no-repeat center/cover;
 
   h2 {
-    color: #f7373a;
+    color: #e21b1b;
     font-size: 40px;
     font-weight: 900;
     line-height: 1;
@@ -46,7 +43,8 @@ const styles = css`
     color: #fff;
     font-size: 16px;
     line-height: 1.7;
-    margin: 20px 0;
+    margin: 20px auto;
+    width: 40%;
   }
   .container {
     display: flex;
@@ -61,7 +59,7 @@ const styles = css`
     }
     p {
       font-size: 14px;
-      margin: 14px;
+      margin: 14px auto;
     }
   }
 `;

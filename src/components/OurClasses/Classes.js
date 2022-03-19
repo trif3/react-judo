@@ -54,7 +54,7 @@ const styles = css`
     color: #7a7a7a;
     font-size: 15px;
     line-height: 1.7;
-    width: 800px;
+    width: 60%;
     margin: 0 auto;
   }
   .container {
@@ -72,6 +72,7 @@ const styles = css`
     p {
       padding: 10px 20px;
       font-size: 14px;
+      
     }
     .subtitle {
       padding-top: 10px;

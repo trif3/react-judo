@@ -41,6 +41,7 @@ const styles = css`
       color: black;
       font-size: 16px;
       line-height: 1.7;
+      text-align: justify;
     }
     a {
       color: #444444;

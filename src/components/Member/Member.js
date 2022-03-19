@@ -39,7 +39,7 @@ const styles = css`
     color: #fff;
     font-size: 16px;
     line-height: 1.7;
-    width: 800px;
+    width: 50%;
     margin: 20px auto;
     font-weight: 600;
   }
@@ -49,6 +49,7 @@ const styles = css`
       font-size: 26px;
     }
     p{
+      width: 100%;
       padding: 0 20px;
       font-size: 15px;
       br{
