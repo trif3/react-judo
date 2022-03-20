@@ -3,18 +3,24 @@ import { jsx, css } from "@emotion/core";
 import Button from "../GlobalComponents/Button";
 import Logo from "../GlobalComponents/Logo"
 
-const Info = () => (
+import { useTranslation, Trans } from "react-i18next";
+
+function Info(){ 
+
+  const { t, i18n } = useTranslation();
+
+  return(
   <div css={styles} className="info">
     <Logo />
-    <p>OVER 20 YEARS OF EXCELLENCE</p>
+    <p><Trans i18nKey="main.over20years"/></p>
     <h1>
-      WELCOME TO JUDO CLUB
+    <Trans i18nKey="main.welcome"/>
     </h1>
     <Button text="JOIN US" linkTo="https://www.facebook.com/groups/klitomaxos" target="_blank" />
     
     
-  </div>
-);
+  </div>)
+};
 
 const styles = css`
   width: 100%;
@@ -34,9 +40,9 @@ const styles = css`
     cursor: context-menu;
   }
   h1 {
-    font-size: 100px;
+    font-size: 50px;
     letter-spacing: 5px;
-    font-family: 'Teko', sans-serif;
+    font-family: 'Fira Sans Condensed', sans-serif;;
     line-height: 1;
     font-weight: 900;
     margin: 36px 0;

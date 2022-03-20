@@ -2,12 +2,17 @@
 import { jsx, css } from "@emotion/core";
 import React, { useState } from "react";
 
+import { useTranslation } from "react-i18next";
+
 const Table = ({ day }) => {
+
+  const { t } = useTranslation();
+
   return (
     <table css={styles}>
       <tbody>
         <tr>
-          <td>Junior Beginners</td>
+          <td>{t('table.jb')}</td>
           <td>
             <span className={day === "Monday" ? "" : "hidden"}>
               17:00PM - 18:30PM
@@ -21,7 +26,7 @@ const Table = ({ day }) => {
           <td>William G. Stewart</td>
         </tr>
         <tr>
-          <td>Senior Beginners</td>
+          <td>{t('table.sb')}</td>
           <td>
             <span className={day === "Friday" ? "" : "hidden"}>
               16:00PM - 17:30PM
@@ -35,7 +40,7 @@ const Table = ({ day }) => {
           <td>Boyd C. Harris</td>
         </tr>
         <tr>
-          <td>Junior Intermediate </td>
+          <td>{t('table.ji')}</td>
           <td>
             <span className={day === "Tuesday" ? "" : "hidden"}>
               18:00PM - 19:30PM
@@ -49,7 +54,7 @@ const Table = ({ day }) => {
           <td>Boyd C. Harris</td>
         </tr>
         <tr>
-          <td>Senior Intermediate </td>
+          <td>{t('table.si')}</td>
           <td>
             <span className={day === "Wednesday" ? "" : "hidden"}>
               17:00PM - 18:30PM
@@ -63,7 +68,7 @@ const Table = ({ day }) => {
           <td>Hector T. Daigle</td>
         </tr>
         <tr>
-          <td>Advanced </td>
+          <td>{t('table.a')}</td>
           <td>
             <span className={day === "Thursday" ? "" : "hidden"}>
               19:00PM - 20:30PM

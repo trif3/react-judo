@@ -9,11 +9,15 @@ import LinksContainer from "./LinksContainer";
 import Results from "./Results";
 import Container from "../GlobalComponents/Container";
 
-const Classes = ({ text }) => {
+import { useTranslation, Trans } from "react-i18next";
+
+function Classes() {
   const [training, setTraining] = useState("FirstClass");
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);
+
+  const { t, i18n } = useTranslation();
 
   return (
     <section
@@ -22,14 +26,10 @@ const Classes = ({ text }) => {
       id="ourClasses"
       data-aos="fade"
     >
-      <h2>OUR CLASSES</h2>
+      <h2> <Trans i18nKey="classes.title"/></h2>
       <Icon />
       <p>
-        The Clitomachus offers a comprehensive timetable of Judo classes for
-        kids, teens and adults.
-        <br />
-        We regularly run Adult Beginners Courses, as well as classes for Junior
-        Beginners, Intermediate Judo and Advanced Judo
+        <Trans i18nKey="classes.subtitle" />
       </p>
       <Container>
         <LinksContainer setTraining={setTraining} training={training} />
@@ -54,6 +54,8 @@ const styles = css`
     color: #7a7a7a;
     font-size: 15px;
     line-height: 1.7;
+    width: 60%;
+    margin: 0 auto;
   }
   .container {
     display: flex;
@@ -70,6 +72,7 @@ const styles = css`
     p {
       padding: 10px 20px;
       font-size: 14px;
+      
     }
     .subtitle {
       padding-top: 10px;
