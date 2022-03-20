@@ -2,42 +2,46 @@
 import { jsx, css } from "@emotion/core";
 import React from "react";
 
+import { useTranslation } from "react-i18next";
+
 const ScheduleLinks = ({ setDay, day }) => {
+  const { t } = useTranslation();
+
   return (
     <div className="links" css={styles}>
       <button
         className={day === "Monday" ? "active" : ""}
         onClick={() => setDay("Monday")}
       >
-        Monday
+        {t("schedulelinks.monday")}
       </button>
       <span>/</span>
       <button
         className={day === "Tuesday" ? "active" : ""}
         onClick={() => setDay("Tuesday")}
       >
-        Tuesday
+        {t("schedulelinks.tuesday")}
       </button>
       <span>/</span>
       <button
         className={day === "Wednesday" ? "active" : ""}
         onClick={() => setDay("Wednesday")}
       >
-        Wednesday
+        {t("schedulelinks.wednesday")}
       </button>
       <span>/</span>
       <button
         className={day === "Thursday" ? "active" : ""}
         onClick={() => setDay("Thursday")}
       >
-        Thursday
+        {t("schedulelinks.thursday")}
       </button>
       <span>/</span>
       <button
         className={day === "Friday" ? "active" : ""}
         onClick={() => setDay("Friday")}
       >
-        Friday
+        {t("schedulelinks.friday")}
       </button>
     </div>
   );

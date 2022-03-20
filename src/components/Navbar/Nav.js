@@ -2,7 +2,7 @@
 import { jsx, css } from "@emotion/core";
 import { useState } from "react";
 import Logo from "./Logo";
-import LinksContainer from "./LinksContainer";
+import NavbarLinksContainer from "./NavbarLinksContainer";
 import Container from "../GlobalComponents/Container";
 
 const Nav = () => {
@@ -17,7 +17,7 @@ const Nav = () => {
           className={hidden ? "fas fa-bars fa-lg" : "fas fa-times fa-lg"}
           id="burgerMenu"
         ></i>
-        <LinksContainer hidden={hidden} />
+        <NavbarLinksContainer hidden={hidden} />
       </Container>
     </nav>
   );

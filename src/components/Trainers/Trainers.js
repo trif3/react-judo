@@ -7,32 +7,36 @@ import Container from "../GlobalComponents/Container";
 import TrainerOneBg from "../Image/trainer1.jpg";
 import TrainerTwoBg from "../Image/trainer2.jpg";
 
-const Trainers = () => (
+import { useTranslation } from "react-i18next";
+
+const Trainers = () => {
+  const { t } = useTranslation();
+
+  return(
   <section css={styles} className="trainers" id="trainers">
     <h2>
-      INSTRUCTORS
+      {t('trainers.title')}
     </h2>
     <Icon />
     <p>
-     Οur team consists of the most renowned trainers. <br />
-     Their combined experiences spans all levels of competition from regional to the highest level.
+     {t('trainers.subtitle')}
     </p>
     <Container>
       <TrainerCard
-        title="Strength Trainer"
-        name="Bret D. Bowers"
-        desc="Bitters cliche tattooed 8-bit distillery mustache. Keytar succulents gluten-free vegan church-key pour-over seitan flannel."
+        title="Sensei"
+        name="Αλεξανδρος Δουμας"
+        desc="Phone: +30 6948278065."
         img={TrainerOneBg}
       />
       <TrainerCard
-        title="Muscle Trainer"
-        name="Hector T. Daigl"
-        desc="Bitters cliche tattooed 8-bit distillery mustache. Keytar succulents gluten-free vegan church-key pour-over seitan flannel."
+        title="Sensei"
+        name="Χαραλαμπιδης Θεοδωρος"
+        desc="Phone: -"
         img={TrainerTwoBg}
       />
     </Container>
-  </section>
-);
+  </section>)
+};
 
 const styles = css`
   width: 100%;
@@ -52,6 +56,8 @@ const styles = css`
     color: #7a7a7a;
     font-size: 16px;
     line-height: 1.7;
+    margin: 0 auto;
+    width: 40%;
   }
   .container {
     display: flex;

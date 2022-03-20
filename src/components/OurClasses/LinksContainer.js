@@ -5,10 +5,15 @@ import Button from "../GlobalComponents/Button";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
-const LinksContainer = ({ setTraining, training }) => {
+import { useTranslation } from 'react-i18next';
+
+const LinksContainer = ({ setTraining, training, }) => {
+  const { t } = useTranslation();
+
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);
+
   return (
     <div
       css={styles}
@@ -21,25 +26,25 @@ const LinksContainer = ({ setTraining, training }) => {
         className={training === "FirstClass" ? "active" : ""}
         onClick={() => setTraining("FirstClass")}
       >
-        Junior (7-15 years old)
+        {t('buttons.junior')}
       </button>
       <button
         className={training === "SecondClass" ? "active" : ""}
         onClick={() => setTraining("SecondClass")}
       >
-        Senior (16+ years old)
+        {t('buttons.senior')}
       </button>
       <button
         className={training === "ThirdClass" ? "active" : ""}
         onClick={() => setTraining("ThirdClass")}
       >
-        Intermediate Classes
+        {t('buttons.intermediate')}
       </button>
       <button
         className={training === "FourthClass" ? "active" : ""}
         onClick={() => setTraining("FourthClass")}
       >
-        Advanced Classes
+        {t('buttons.advanced')}
       </button>
       <Button text="View All Schedules" linkTo="#schedule" />
     </div>
