@@ -2,7 +2,7 @@
 import { jsx, css } from "@emotion/core";
 import React from "react";
 import Output from "./Output";
-import ClassOneBg from "../Image/juniortest.jpg";
+import ClassOneBg from "../Image/junior.jpg";
 import ClassTwoBg from "../Image/senior.jpg";
 import ClassThreeBg from "../Image/intermediate.jpg";
 import ClassFourBg from "../Image/advanced.jpg";

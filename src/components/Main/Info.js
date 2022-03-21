@@ -41,11 +41,11 @@ const styles = css`
   }
   h1 {
     font-size: 50px;
-    letter-spacing: 5px;
+    letter-spacing: 2px;
     font-family: 'Fira Sans Condensed', sans-serif;;
     line-height: 1;
     font-weight: 900;
-    margin: 36px 0;
+    margin: 36px auto;
     cursor: context-menu;
     span {
       color: #007BA7;
@@ -54,9 +54,9 @@ const styles = css`
   .btn {
     padding: 14px 16px;
   }
-  @media (max-width: 1000px) {
+  @media (max-width: 768px) {
     h1 {
-      font-size: 42px;
+      font-size: 30px;
     }
   }
 `;

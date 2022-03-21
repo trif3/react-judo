@@ -26,6 +26,7 @@ const styles = css`
   max-width: 620px;
   align-items: center;
   justify-content: space-between;
+  
 
   @media (max-width: 1000px) {
     max-width: 100%;

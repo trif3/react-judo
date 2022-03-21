@@ -14,6 +14,10 @@ const styles = css`
   max-width: 100%;
   max-height: 100vh;
   object-fit: cover;
+
+  @media (max-width: 768px) {
+
+  }
 `;
 
 export default Image;

@@ -72,6 +72,7 @@ const styles = css`
     p {
       padding: 10px 20px;
       font-size: 14px;
+      width: 80%;
       
     }
     .subtitle {
