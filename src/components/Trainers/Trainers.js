@@ -74,7 +74,9 @@ const styles = css`
       padding-top: 10px;
     }
     p{
-      font-size: 14px;
+      font-size: 12px;
+      width: 90%;
+      text-align: justify;
       padding: 0 17px 0 17px;
     }
     .container{

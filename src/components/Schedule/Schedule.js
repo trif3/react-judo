@@ -42,6 +42,7 @@ const styles = css`
   p {
     color: #fff;
     font-size: 16px;
+    font-weight: 500;
     line-height: 1.7;
     margin: 20px auto;
     width: 40%;
@@ -58,7 +59,9 @@ const styles = css`
       margin-bottom: 10px;
     }
     p {
-      font-size: 14px;
+      font-size: 12px;
+      width: 90%;
+      text-align: justify;
       margin: 14px auto;
     }
   }

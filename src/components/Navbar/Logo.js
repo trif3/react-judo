@@ -1,11 +1,16 @@
 /** @jsx jsx */
 import { jsx, css } from "@emotion/core";
 
-const Logo = () => (
+import { useTranslation } from "react-i18next";
+
+const Logo = () => {
+  const { t } = useTranslation();
+
+  return(
   <h2 css={styles}>
-    CLITOMACHUS
-  </h2>
-);
+    {t('navbar.clitomachus')}
+  </h2>)
+};
 
 const styles = css`
   color: #fff;

@@ -16,6 +16,7 @@ function GymSubtitle()  {
 const styles = css`
   color: #7a7a7a;
   font-size: 15px;
+  font-weight: 500;
   line-height: 1.7;
   width: 70%;
   margin: 0 auto;

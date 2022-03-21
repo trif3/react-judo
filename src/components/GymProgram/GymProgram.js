@@ -71,6 +71,8 @@ const styles = css`
     .container {
       width: 100%;
       float: center;
+      font-size: 12px;
+      
     }
     .float-child {
       width: 100%;
@@ -81,6 +83,9 @@ const styles = css`
     }
     .subtitle {
       padding-top: 10px;
+      font-size: 12px;
+      width: 100%;
+      text-align: justify;
     }
     .img {
       padding-bottom: 10px;

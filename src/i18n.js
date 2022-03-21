@@ -28,6 +28,14 @@ i18n
           member: {
             paragraph: 'We offer regular training sessions for all judoka aged 7 years old onwards. We have a mix of international competitors to beginners all sharing the dojo at the same time, so no matter what your goal is, we will help you achieve it.'
           },
+          navbar: {
+            home: "HOME",
+            classes: "CLASSES",
+            schedule: "SCHEDULE",
+            trainers: "TRAINERS",
+            contact: "CONTACT",
+            clitomachus: "CLITOMACHUS",
+          },
           classes: {
             title: "OUR CLASSES",
             subtitle: "The Clitomachus offers a comprehensive timetable of Judo classes for kids, teens and adults. We regularly run Adult Beginners Courses, as well as classes for Junior Beginners, Intermediate Judo and Advanced Judo",
@@ -84,11 +92,19 @@ i18n
             judo: "Το τζούντο είνα η τέχνη που διδάσκει την αυτοπειθαρχία, την συγκέντρωση και την αυτοπεποίθηση σε έναν αθλητή αλλά κυρίως του μαθαίνει τον σεβασμό απέναντι στον ευτό του αλλά και απέναντι στον αντίπαλο. Το άθλημα αυτό αναπτύσει  φυσικό συντονισμό, την δύναμη και την ευελιξία του σώματος",
             jiujitsu: "Το Jiu Jitsu είναι μια πολεμική τέχνη που εστιάζει στην αρπαγή και ειδικά στην πάλη εδάφους. Διδάσκει ότι ένα μικρότερο και πιο αδύναμο άτομο μπορεί να αμυνθεί με επιτυχία απέναντι σ’ έναν μεγαλύτερο και δυνατότερο επιτιθέμενο, χρησιμοποιώντας την κατάλληλη τεχνική.",
             pancratium: "Το Παγκράτιο είναι ένα αρχαιοελληνικό άθλημα, το οποίο περιλαμβανόταν στο πρόγραμμα των αρχαίων Ολυμπιακών Αγώνων.  Ο ασκούμενος στο Παγκράτιο μαθαίνει στη βασική εκπαίδευση τις τεχνικές της αυτοάμυνας με γροθιές, ρίψεις και ακινητοποιήσεις.",
-            subtitle: "Ο σύλλογος τζούντo Κλειτόμαχος προσφέρει προγράμματα για 'όλες τις ηλικίες από παιδιά έως ενήλικες και από αρχάριους έως προχωρημένους αθλητές που αγωνίζονται σε διεθνές επίπεδο.",
-            title: "ΤΑ ΑΘΛΗΜΑΤΑ ΜΑΣ",
+            subtitle: "Ο σύλλογος τζούντo Κλειτόμαχος προσφέρει προγράμματα για όλες τις ηλικίες από παιδιά έως ενήλικες και από αρχάριους έως προχωρημένους αθλητές που αγωνίζονται σε διεθνές επίπεδο.",
+            title: "ΑΘΛΗΜΑΤΑ",
           },
           member: {
             paragraph: 'Προσφέρουμε εντατικές προπονήσεις για όλους τους τζούντοκα ηλικίας 7 ετών και άνω. Στο προπονητικό μας κέντρο θα βρείτε αρχάριους και προχωρημένους να μοιράζονται το dojo ταυτόχρονα, οπότε ανεξάρτητα από το ποιος είναι ο στόχος σας, θα σας βοηθήσουμε να τον πετύχετε.'
+          },
+          navbar: {
+            home: "ΑΡΧΙΚΗ",
+            classes: "ΤΜΗΜΑΤΑ",
+            schedule: "ΠΡΟΓΡΑΜΜΑ",
+            trainers: "ΠΡΟΠΟΝΗΤΕΣ",
+            contact: "ΕΠΙΚΟΙΝΩΝΙΑ",
+            clitomachus: "ΚΛΕΙΤΟΜΑΧΟΣ"
           },
           classes: {
             title: "ΤΜΗΜΑΤΑ",

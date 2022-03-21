@@ -53,6 +53,7 @@ const styles = css`
   p {
     color: #7a7a7a;
     font-size: 15px;
+    font-weight: 500;
     line-height: 1.7;
     width: 60%;
     margin: 0 auto;
@@ -71,8 +72,9 @@ const styles = css`
     }
     p {
       padding: 10px 20px;
-      font-size: 14px;
-      width: 80%;
+      font-size: 12px;
+      width: 90%;
+      text-align: justify;
       
     }
     .subtitle {

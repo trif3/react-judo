@@ -3,17 +3,20 @@ import { jsx, css } from "@emotion/core";
 import Link from "./Link";
 import ButtonSignUp from "../GlobalComponents/ButtonSignUp";
 
+import { useTranslation } from "react-i18next";
+
 
 const LinksContainer = ({ hidden }) => {
-  
+
+  const { t } = useTranslation();
 
   return (
     <div css={styles} className={(hidden ? "hidden" : "") + " linksContainer"}>
-      <Link name="HOME" linkTo="#home" />
-      <Link name="CLASSES" linkTo="#ourClasses" />
-      <Link name="SCHEDULES" linkTo="#schedule" />
-      <Link name="TRAINERS" linkTo="#trainers" />
-      <Link name="CONTACT" linkTo="#contact" />
+      <Link name={t('navbar.home')} linkTo="#home" />
+      <Link name={t('navbar.classes')} linkTo="#ourClasses" />
+      <Link name={t('navbar.schedule')} linkTo="#schedule" />
+      <Link name={t('navbar.trainers')} linkTo="#trainers" />
+      <Link name={t('navbar.contact')} linkTo="#contact" />
       
       {/* <ButtonSignUp text="SIGN UP" /> */}
     </div>
@@ -36,8 +39,7 @@ const styles = css`
     opacity: 1;
     position: absolute;
     left: 0;
-    top: 70px;
-    background: rgba(255, 255, 255);
+    top: 70px;   
     transition: top 1100ms ease-in-out, opacity 1100ms ease-in-out;
     &.hidden {
       left: 0;
