@@ -3,12 +3,17 @@ import { jsx, css } from "@emotion/core";
 import Link from "./Link";
 import ButtonSignUp from "../GlobalComponents/ButtonSignUp";
 
-import { useTranslation } from "react-i18next";
+import { useTranslation, Trans } from "react-i18next";
+
+const lngs = {
+  en: { nativeName: "EN" },
+  gr: { nativeName: "EL" },
+};
 
 
 const LinksContainer = ({ hidden }) => {
 
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   return (
     <div css={styles} className={(hidden ? "hidden" : "") + " linksContainer"}>
@@ -17,8 +22,19 @@ const LinksContainer = ({ hidden }) => {
       <Link name={t('navbar.schedule')} linkTo="#schedule" />
       <Link name={t('navbar.trainers')} linkTo="#trainers" />
       <Link name={t('navbar.contact')} linkTo="#contact" />
+      {Object.keys(lngs).map((lng) => (
+          <button
+            key={lng}
+            style={{
+              fontWeight: i18n.resolvedLanguage === lng ? "bold" : "normal",
+            }}
+            type="submit"
+            onClick={() => i18n.changeLanguage(lng)}
+          >
+            {lngs[lng].nativeName}
+          </button>
+        ))}
       
-      {/* <ButtonSignUp text="SIGN UP" /> */}
     </div>
   );
 };
@@ -29,7 +45,12 @@ const styles = css`
   max-width: 620px;
   align-items: center;
   justify-content: space-between;
-  
+  button{
+      border: 2px;
+      color: #bcbcbc;
+      background-color: transparent;
+      font-size: 14px;
+    }
 
   @media (max-width: 1000px) {
     max-width: 100%;
@@ -41,6 +62,7 @@ const styles = css`
     left: 0;
     top: 70px;   
     transition: top 1100ms ease-in-out, opacity 1100ms ease-in-out;
+    
     &.hidden {
       left: 0;
       top: -500px;
