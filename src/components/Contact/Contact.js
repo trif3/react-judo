@@ -13,7 +13,7 @@ const Contact = () => (
     </Container>
     <footer>
       <p>
-        Copyright &copy; 2022 by{" "}
+        Copyright &copy; 2023 by{" "}
         <a href="https://judosport.gr/" target="_blank">
           Kleitomaxos team
         </a>

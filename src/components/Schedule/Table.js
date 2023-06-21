@@ -18,12 +18,8 @@ const Table = ({ day }) => {
               17:00PM - 18:30PM
             </span>
           </td>
-          <td>
-            <span className={day === "Tuesday" ? "" : "hidden"}>
-              16:00PM - 17:30PM
-            </span>
-          </td>
-          <td>William G. Stewart</td>
+          
+          <td>Alexandros Doumas</td>
         </tr>
         <tr>
           <td>{t('table.sb')}</td>
@@ -32,12 +28,8 @@ const Table = ({ day }) => {
               16:00PM - 17:30PM
             </span>
           </td>
-          <td>
-            <span className={day === "Thursday" ? "" : "hidden"}>
-              17:00PM - 18:30PM
-            </span>
-          </td>
-          <td>Boyd C. Harris</td>
+          
+          <td>Alexandros Doumas</td>
         </tr>
         <tr>
           <td>{t('table.ji')}</td>
@@ -46,12 +38,8 @@ const Table = ({ day }) => {
               18:00PM - 19:30PM
             </span>
           </td>
-          <td>
-            <span className={day === "Monday" ? "" : "hidden"}>
-              19:00PM - 20:30PM
-            </span>
-          </td>
-          <td>Boyd C. Harris</td>
+          
+          <td>Alexandros Doumas</td>
         </tr>
         <tr>
           <td>{t('table.si')}</td>
@@ -60,12 +48,8 @@ const Table = ({ day }) => {
               17:00PM - 18:30PM
             </span>
           </td>
-          <td>
-            <span className={day === "Friday" ? "" : "hidden"}>
-              18:00PM - 19:30PM
-            </span>
-          </td>
-          <td>Hector T. Daigle</td>
+          
+          <td>Alexandros Doumas</td>
         </tr>
         <tr>
           <td>{t('table.a')}</td>
@@ -74,12 +58,8 @@ const Table = ({ day }) => {
               19:00PM - 20:30PM
             </span>
           </td>
-          <td>
-            <span className={day === "Wednesday" ? "" : "hidden"}>
-              19:00PM - 20:30PM
-            </span>
-          </td>
-          <td>Bret D. Bowers</td>
+          
+          <td>Alexandros Doumas</td>
         </tr>
       </tbody>
     </table>
