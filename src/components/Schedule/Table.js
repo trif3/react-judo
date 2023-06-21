@@ -2,7 +2,7 @@
 import { jsx, css } from "@emotion/core";
 import React, { useState } from "react";
 
-import { useTranslation } from "react-i18next";
+import { Trans, useTranslation } from "react-i18next";
 
 const Table = ({ day }) => {
 
@@ -19,7 +19,9 @@ const Table = ({ day }) => {
             </span>
           </td>
           
-          <td>Alexandros Doumas</td>
+          <td> 
+            <Trans i18nKey="trainers.nameAD"/>
+          </td>
         </tr>
         <tr>
           <td>{t('table.sb')}</td>
@@ -29,7 +31,9 @@ const Table = ({ day }) => {
             </span>
           </td>
           
-          <td>Alexandros Doumas</td>
+          <td>
+          <Trans i18nKey="trainers.nameAD"/>
+          </td>
         </tr>
         <tr>
           <td>{t('table.ji')}</td>
@@ -39,7 +43,9 @@ const Table = ({ day }) => {
             </span>
           </td>
           
-          <td>Alexandros Doumas</td>
+          <td>
+            <Trans i18nKey="trainers.nameAD"/> 
+          </td>
         </tr>
         <tr>
           <td>{t('table.si')}</td>
@@ -49,7 +55,9 @@ const Table = ({ day }) => {
             </span>
           </td>
           
-          <td>Alexandros Doumas</td>
+          <td>
+            <Trans i18nKey="trainers.nameAD"/>
+           </td>
         </tr>
         <tr>
           <td>{t('table.a')}</td>
@@ -59,7 +67,9 @@ const Table = ({ day }) => {
             </span>
           </td>
           
-          <td>Alexandros Doumas</td>
+          <td>
+            <Trans i18nKey="trainers.nameAD"/>
+           </td>
         </tr>
       </tbody>
     </table>

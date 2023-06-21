@@ -77,7 +77,8 @@ i18n
           },
           trainers: {
             title: "INSTRUCTORS",
-            subtitle: "Οur team consists of the most renowned trainers. Their combined experiences spans all levels of competition from regional to the highest level."
+            subtitle: "Οur team consists of the most renowned trainers. Their combined experiences spans all levels of competition from regional to the highest level.",
+            nameAD: "Alexandros Doumas",
           },
         },
       },
@@ -147,7 +148,9 @@ i18n
          },
          trainers: {
           title: "ΠΡΟΠΟΝΗΤΕΣ",
-          subtitle: "Η ομάδα μας αποτελείται από καταξιωμένους εκπαιδευτές με μακροχρόνια εμπειρία στον κλάδο των πολεμικών τεχνών."
+          subtitle: "Η ομάδα μας αποτελείται από καταξιωμένους εκπαιδευτές με μακροχρόνια εμπειρία στον κλάδο των πολεμικών τεχνών.",
+          nameAD: "Αλεξανδρος Δουμας",
+
         }
         },
       },
